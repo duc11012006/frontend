@@ -101,6 +101,7 @@ section.card h1 {
     line-height: 60.95px;
     text-align: center;
     color: rgba(29, 29, 36, 1);
+    margin-bottom: 60px;
 }
 
 section.card div.card-item {
@@ -121,6 +122,8 @@ section.card div.card-item span {
     font-weight: 400;
     line-height: 24px;
     color: rgba(29, 29, 36, 1);
+    margin-left: 222px;
+    margin-top: 10px;
 }
 
 section.card  div.card-item h4 {
@@ -128,4 +131,21 @@ section.card  div.card-item h4 {
     font-size: 20px;
     font-weight: 600;
     line-height: 30px;
+    text-align: center;
+    margin-bottom: 60px;
+    margin-top: 2px;
+}
+
+footer  {
+    padding: 31px 0;
+    background: rgba(0, 1, 12, 1);
+}
+
+footer p {
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+    color: rgba(198, 201, 216, 1);
 }
