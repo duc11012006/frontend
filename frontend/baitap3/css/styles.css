@@ -1,0 +1,59 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body, html {
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+div.slider {
+    background-color: blue;
+    height: 300px;
+    position: relative;
+}
+
+div.slider div.content {
+    position: absolute;
+    left: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+div.slider div.button {
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    display: inline-block;
+    padding: 15px 30px;
+    transform: translateX(-50%)
+}
+
+div.slider a  {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    border-radius: 50%;
+    background-color: white;
+    margin-right: 10px ;
+}
+
+div.slider a:last-child {
+    margin-right: 0px ;
+}
+
+div.slider a.active {
+    background-color: yellow;
+}
+
+div.slider h1 {
+    padding-left: 50px;
+}
+
+div.slider p {
+    padding-left: 50px;
+    padding-top: 10px;
+}
+

@@ -1,0 +1,15 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 TRANSITIONAL//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="content-type" content="text-html"; charset="utf-8">
+<title>Example 003</title>
+<script type="text/javacript">
+    function message (){
+        alert ("Hello World");
+    }
+</script>
+</head>
+<body>
+    <a href="#" onclick="message();">Click here</a>
+</body>
+</html>

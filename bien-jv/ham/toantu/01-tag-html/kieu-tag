@@ -1,0 +1,38 @@
+<<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=decive-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <div class="box1 box2">Cau truc HTML tag</div>
+    .block {
+        width: 400px;
+        height: 200px;
+        border: 2px solid #999;
+    }
+
+    .txt {
+        font-family: Arial; Helvetica, sans-serif;
+        font-size: 18px;
+        font-style: oblique;
+        font-variant: small-caps;
+        font-weight: bold;
+        line-height: 20px;
+        font: oblique  bold 18px/20px Arial; Helvetica, sans-serif;
+        text-tranform: lowercase;
+        text-decoration:underline;
+        tex-decoration:overline;
+        text-decoration: line-through;
+        color: red;
+        <div class="block txt">Nhóm ZendVN được hình thành từ cuối năm 2007 gồm 4 thành viên </div>
+        color: yellow
+
+    }
+</body>
+
+</html>
