@@ -1,0 +1,37 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 TRANSITIONAL//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="content-type" content="text-html"; charset="utf-8">
+<title>Example 02</title>
+<script type="text-javacript">
+
+    function showMessage (userl) {
+        document.write("Xin Chào <b>"+ userl + "</b>đã ghé thăm diễn đàn của chúng tôi!<br />");
+    }
+    /*
+    showMessage (Nguyen Van A);
+    showMessage (Nguyen Van B);
+    showMessage (Nguyen Van C);
+    */
+
+    /*
+      Cách 1: Gọi trực tiếp
+      Cách 2: Thông qua một sự kiện nào đó từ phía người dùng
+      Cách 3: Gọ hàm từ một hàm khác 
+    */
+
+    function callshowMessage (){
+        showMessage ("Nguyen Van B");
+    }
+</script>
+
+</head>
+
+<body>
+    <a href="#" on Click="showMassage('Nguyen Van A');">Xin chào</a>
+</body>
+</html></head>
+
+<body>
+</body>
+</html>

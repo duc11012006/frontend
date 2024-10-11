@@ -1,0 +1,110 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    color: #FFFFFF;
+}
+
+div.content {
+    width: 625px;
+    height: 778px;
+    box-shadow: 0px 10px 86px -20px #C8D5F1;
+    border-radius: 15px;
+    margin: 61px auto;
+}
+
+
+div.top {
+    width: 625px;
+    height: 211px;
+    background: #20225E;
+    padding-top: 101px;
+    padding-bottom: 70px;
+    position: relative;
+    border-radius: 15px 15px 0px 0px;
+}
+
+div.top h1 {
+    font-family: "Mulish";
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+}
+
+div.top a {
+    width: 46px;
+    height: 46px;
+    display: inline-block;
+    border-radius: 50%;
+    background: #2F316E;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    text-align: center;
+
+}
+
+div.top i {
+    font-size: 15px;
+    line-height: 46px;
+    color: #FFFFFF;
+}
+
+
+
+div.bottom {
+    padding: 65px 117px 70px 117px;
+}
+
+div.row {
+    margin-bottom: 40px;
+    position: relative;
+}
+
+div.row:last-child {
+    margin-bottom: 0px;
+}
+
+label {
+    font-family: "Mulish";
+    font-size: 14px;
+    font-weight: 700;
+    color: #151749;
+    margin-bottom: 14px;
+   
+    display: block;
+}
+
+label:last-child {
+    bottom: 65px;
+}
+
+button {
+    width: 247px;
+    height: 77px;
+    font-weight: 700;
+    font-size: 18px;
+    background: #20225E;
+    color: #FFFFFF;
+    box-shadow: 0px 20px 20px -16px #02067F59;
+    border-radius: 38.5px;
+    position: absolute;
+    left: 70px;
+}
+
+input, select {
+    width: 100%;
+    outline: 0;
+    padding-bottom: 13px;
+    border: 0;
+    border-bottom: 2px solid #d3d5f1;
+}
+
+
+
+
+
+

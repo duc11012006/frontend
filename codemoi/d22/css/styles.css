@@ -1,0 +1,167 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "poppins";
+}
+
+nav {
+    padding: 18px 0px;
+}
+
+nav ul.top  {
+    font-size: 0px;
+    text-align: center;
+}
+
+
+nav ul.top li {
+    display: inline-block;
+    text-align: center;
+    margin-right: 34.08px;
+}
+
+
+nav ul.top li.active{
+    padding: 12px 26.23px 12px 27px;
+    border-radius: 6px;
+    background: rgba(255, 255, 255, 1);
+    border: 2px solid rgba(29, 29, 36, 0.5);
+}
+
+nav ul.top li:last-child {
+    margin-right: 0px;
+}
+
+nav ul.top li a {
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 500;
+    color: rgba(29, 29, 36, 1);
+    text-decoration: none;
+}
+
+
+section.avatar {
+    background: rgba(248, 249, 252, 1);
+    padding: 150px 0 150px 0;
+    text-align: center;
+    font-size: 0;
+}
+
+section.avatar img {
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    border: 14px solid rgba(255, 255, 255, 1);
+    box-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.1);
+    vertical-align: middle;
+}
+
+section.avatar div.content {
+    display: inline-block;
+    color: rgba(31, 31, 37, 1);
+    vertical-align: middle;
+    margin-left: 34px;
+    text-align: left;
+}
+
+section.avatar div.content h5 {
+    font-family: "Poppins";
+    font-size: 16px;
+    font-weight: 400;
+}
+
+section.avatar div.content h3 {
+    font-family: "Montserrat";
+    font-size: 58px;
+    font-weight: 700;
+    line-height: 75px;
+}
+
+section.avatar div.content span {
+    color:rgba(249, 0, 77, 1);
+}
+
+section.card {
+    padding-top: 120px;
+    padding-left: 106px;
+    padding-right: 106px;
+}
+
+section.card  div.list-card {
+    font-size: 0px;
+}
+
+section.card h1 {
+    font-family: "Montserrat";
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 60.95px;
+    text-align: center;
+    color: rgba(29, 29, 36, 1);
+    margin-bottom: 60px;
+}
+
+section.card div.card-item {
+    width: calc((100% - 68px) / 3);
+    display: inline-block;
+    margin-right: 34px;
+    text-align: center;
+}
+
+section.card div.card-item:nth-child(3n){
+    margin-right: 0;
+}
+
+section.card div.card-item:nth-child(6n){
+    margin-right: 0;
+}
+
+section.card div.card-item:nth-child(9n){
+    margin-right: 0;
+}
+
+section.card div.card-item img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 25px 65px 0px rgba(0, 0, 0, 0.1);
+    margin-bottom: 26px;
+}
+
+section.card div.card-item span {
+    font-family: "Poppins";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    color: rgba(29, 29, 36, 1);
+}
+
+section.card  div.card-item h4 {
+    font-family:"Poppins";
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+    text-align: center;
+    margin-bottom: 60px;
+    margin-top: 2px;
+}
+
+footer  {
+    padding: 31px 0;
+    background: rgba(0, 1, 12, 1);
+}
+
+footer p {
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+    color: rgba(198, 201, 216, 1);
+}
+
+

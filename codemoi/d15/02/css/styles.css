@@ -1,0 +1,35 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+div.content  {
+    background: orange;
+    width: 900px;
+    font-size: 0px;
+    margin: 40px auto;
+}
+
+
+div.content p.left {
+    width: 300px;
+    background-color: green;
+    color: aliceblue;
+    display: inline-block;
+    font-size: 14px;
+    border: 10px solid black; 
+    padding: 20px ;
+}
+
+div.content p.right {
+    width: 600px;
+    background-color: blue;
+    color: aliceblue;
+    display: inline-block;
+    font-size: 14px;
+    border: 30px solid red; 
+    padding: 20px ;
+    
+}

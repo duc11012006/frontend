@@ -1,0 +1,34 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+div.slider {
+    position: relative;
+}
+
+div.slider img {
+    width: 100%;
+}
+
+div.slider div.button {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    display: flex;
+    transform: translateX(-50%);
+    gap: 10px;
+}
+
+div.slider div.button a {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: white;
+}
+
+div.slider div.button a.active {
+    background-color: yellow;
+}
+

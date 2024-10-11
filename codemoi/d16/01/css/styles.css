@@ -1,0 +1,68 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background: #FFFFFF;
+    text-align: center;
+}
+
+h2 {
+    font-family: "Times New Roman";
+    font-size: 32px;
+    font-weight: 700;
+    margin-top: 20px;
+}
+
+div.content {
+    display: inline-block;
+    background: #F0E68C; 
+    margin: 20px auto;
+    font-size: 0px;
+    padding: 20px 66px;
+}
+
+a {
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    margin-right: 34px;
+    border-radius: 50%;
+}
+
+a.twitter    {
+    background: #000000;
+}
+
+a.facebook {
+    background: #FFFFFF;
+}
+
+a.instagram {
+    background: linear-gradient(45deg, #FF9C02 0%, #FF0C52 35%, #FC01CF 100%);
+   
+}
+
+a:last-child {
+    margin-right: 0px;
+  }
+
+  i {
+    font-size: 50px;
+    line-height: 100px;
+    margin: 20px auto;
+  }
+i.fa-facebook-f {
+    color: #0866FF;
+}
+
+i.fa-instagram {
+   color: #FFFFFF;
+}
+
+i.fa-twitter {
+    color: #FFFFFF;
+}
+
