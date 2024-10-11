@@ -5,6 +5,10 @@
         margin-right: 16px;
     }
 
+    nav ul.top li a {
+        font-size: 15px;
+    }
+
     nav ul.top li.active {
         padding: 7px 18px;
     }
@@ -37,6 +41,7 @@
 
     section.card h1 {
         margin-bottom: 30px;
+        font-size: 35px;
     }
 
     section.card div.card-item {
