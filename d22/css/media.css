@@ -1,0 +1,55 @@
+@media only screen and (max-width: 450px) {
+
+
+    nav ul.top li {
+        margin-right: 16px;
+    }
+
+    nav ul.top li.active {
+        padding: 7px 18px;
+    }
+
+    section.avatar {
+        padding: 30px 0px;
+    }
+
+    section.avatar img {
+        width: 300px;
+        height: 300px;
+    }
+
+    section.avatar div.content {
+        margin-top: 20px;
+        margin-left: 0;
+    }
+
+    section.avatar div.content h3 {
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 40px;
+    }
+
+    section.card {
+        padding-top: 43px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    section.card h1 {
+        margin-bottom: 30px;
+    }
+
+    section.card div.card-item {
+        width: calc(100%);
+        margin-right: 0;
+        text-align: center;
+    }
+
+    section.card div.card-item h4 {
+        margin-bottom: 30px;
+    }
+
+    section.card div.card-item img {
+        margin-bottom: 12px;
+    }
+}
