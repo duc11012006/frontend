@@ -1,0 +1,71 @@
+@media only screen and (max-width: 450px) {
+    nav {
+        padding: 33px 10px;
+        padding-bottom: 18px;
+    }
+
+    
+    nav a.logo {
+        font-size: 18px;
+        font-weight: 700;
+        margin-right: 10px;
+    }
+
+    nav ul.menu {
+        display: flex;
+        gap: 25px;
+    }
+
+    nav ul.menu li a {
+        font-size: 15px;
+    }
+
+    nav div.button {
+        display: flex;
+        gap: 8px;
+        margin-left: -200px;
+        margin-top: -44px;
+        margin-bottom: 8px;
+    }
+
+    div.button button {
+        padding: 5px 10px;
+    }
+
+    section.section-content {
+        padding: 55px 15px;
+    }
+
+    section.section-content h2 {
+        font-size: 51px;
+        font-weight: 700;
+    }
+
+    section.section-content p {
+        font-size: 20px;
+        margin-top: 20px;
+    }
+
+    section.section-content button {
+        margin-top: 30px;
+        padding: 17px 40px;
+    }
+
+    section.section-articles {
+        padding: 15px;
+    }
+
+    section.section-articles div.title {
+        margin-bottom: 20px;
+    }
+
+    section.section-articles div.title h3 {
+        font-size: 18px;
+        margin-left: 5px;
+        margin-right: 3px;
+    }
+    
+    section.section-articles div.list-articles article span {
+        font-size: 18px;
+    }
+}
