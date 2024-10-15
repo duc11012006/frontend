@@ -6,96 +6,96 @@
 
 body {
     font-family: "IBM Plex Sans";
-    font-size: 0;
+    font-size: 18px;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    font-family: inherit;
 }
 
 nav {
     display: flex;
     justify-content: space-between;
+    align-items: center ;
+    padding: 25px 45px;
     /* vertical-align: middle;
     text-align: center; */
 }
 
-nav a{
-    font-family: "IBM Plex Sans";
+nav a.logo {
     font-size: 22px;
     font-weight: 700;
-    margin: 35px 0 45px 0;
-    padding-left: 45px;
-    text-decoration: none;
     color: #14203E3D;
 }
 
-nav ul.menu{
+nav ul.menu {
     display: flex;
     gap: 56px;
-    margin: 38px 0;
 }
 
-nav ul.menu li{
+nav ul.menu li {
     list-style: none;
 }
 
-nav ul.menu li a{
-    font-family: "IBM Plex Sans";
+nav ul.menu li a {
     font-size: 18px;
     font-weight: 400;
     color: #14203E;
 }
 
-nav div.button{
-    padding: 5px;
+nav div.button {
+    display: flex;
+    gap: 15px;
 }
 
-nav div.button{
-    margin: 23px 0;
-}     
-
-div.button button.login{
+div.button button {
     padding: 13px 30px;
     border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+div.button button.login {
     background: #F6F0E8;
-    margin-right: 15px;
     color: #000000;
-}     
+}
 
-div.button button.free{
-    padding: 13px 30px;
-    border-radius: 10px;
+div.button button.free {
     background: #14203E;
-    margin-right:45px ;
     color: #FFFFFF;
-} 
+}
 
 section.section-content {
     background: #FFFCF8;
-    padding: 229px;
-    padding-bottom: 130px;
+    padding: 130px 15px;
     text-align: center;
+}
 
+section.section-content div.content{
+    max-width: 600px;
+    margin:auto;
 }
 
 section.section-content h2 {
-    font-family: "IBM Plex Sans";
     font-size: 66px;
     font-weight: 700;
     line-height: 71.94px;
-    text-align: center;
 }
 
 section.section-content p {
-    font-family: "IBM Plex Sans";
     font-size: 22px;
     font-weight: 500;
     line-height: 28.6px;
-    text-align: center;
     margin-top: 30px;
 
 }
 
 section.section-content button {
     margin-top: 40px;
-    font-family: "IBM Plex Sans";
     font-size: 18px;
     font-weight: 400;
     line-height: 23.4px;
@@ -103,6 +103,7 @@ section.section-content button {
     color: #FFFFFF;
     border-radius: 10px;
     padding: 25px 40px;
+    border: none;
 }
 
 section.section-articles {
@@ -110,27 +111,15 @@ section.section-articles {
 }
 
 section.section-articles div.title {
+    align-items: center;
+    display: flex;
     margin-bottom: 30px;
-    text-align: center;
+    justify-content: center;
 }
 
-section.section-articles div.title  span.line {
+section.section-articles div.title span.line {
     height: 1px;
     width: 200px;
-    margin-left: 320px;
-    margin-right: 15px;
-    display: flex;
-    margin-bottom: -9px;
-    background: rgba(20, 32, 62, 0.2);
-}
-
-section.section-articles div.title  span.line-right {
-    height: 1px;
-    width: 200px;
-    margin-left: 770px;
-    margin-right: 482px;
-    margin-top: -10px;
-    display: flex;
     background: rgba(20, 32, 62, 0.2);
 }
 
@@ -140,7 +129,8 @@ section.section-articles div.title h3 {
     font-weight: 600;
     line-height: 18.2px;
     color: #14203E;
-    display: inline-block;
+    margin-left: 9px;
+    margin-right: 9px;
 }
 
 section.section-articles div.list-articles {
@@ -150,11 +140,14 @@ section.section-articles div.list-articles {
 
 section.section-articles div.list-articles article {
     background: rgba(255, 255, 255, 1);
+    width: 25%;
 }
 
 section.section-articles article img {
     width: 100%;
     margin-bottom: 20px;
+    aspect-ratio: 290 / 231;
+    object-fit: cover;
 }
 
 section.section-articles div.list-articles article span {
