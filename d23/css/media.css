@@ -64,8 +64,22 @@
         margin-left: 5px;
         margin-right: 3px;
     }
+
+    section.section-articles article img {
+        width: 100%;
+    }
     
+    section.section-articles div.list-articles {
+        display: flex;
+        flex-direction: column;
+    }
+
     section.section-articles div.list-articles article span {
         font-size: 18px;
     }
+
+    section.section-articles div.list-articles article {
+        width: 100%;
+    }
+
 }
