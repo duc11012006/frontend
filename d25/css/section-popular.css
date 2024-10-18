@@ -1,0 +1,88 @@
+/* section.section-popular {
+    padding: 190px 0;
+} */
+
+section.section-popular div.title {
+    margin-top: 190px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+section.section-popular div.title h2 {
+    font-size: 35px;
+    font-weight: 600;
+    line-height: 45px;
+    letter-spacing: 0.30000001192092896px;
+    color: rgba(255, 255, 255, 1);
+}
+
+section.section-popular div.title a.see {
+    font-size: 12px;
+    line-height: 12px;
+    letter-spacing: 1.5px;
+    color: rgba(255, 255, 255, 1);
+    align-items: center;
+}
+
+section.section-popular div.list-exericse {
+   margin-top: 50px;
+}
+
+section.section-popular article  {
+    display: flex;
+    flex-wrap: wrap ; 
+    gap: 80px 40px;
+}
+
+section.section-popular article div.list-picture {
+    display: block;
+    width: calc((100% - 80px) / 3);
+}
+
+/* article div.list-picture div.background {
+
+} */
+
+section.section-popular article div.list-picture div.content {
+    margin-top: -35px;
+}
+
+article div.content h3 {
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 45px;
+    letter-spacing: 0.30000001192092896px;
+    color: rgba(255, 255, 255, 1);
+}
+
+article div.content div.list-title {
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0px -20px 30px black;
+    background-color: black;
+}
+
+article div.content button {
+    padding: 10px 10px;
+    margin-right: -5px;
+}
+
+article div.content button.time {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 19px;
+    letter-spacing: 1.3666666746139526px;
+    color: rgba(255, 255, 255, 1);
+    background: rgba(0, 0, 0, 1);
+    border: none;
+    border-radius: 10px;
+}
+
+article div.content span.target {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: 0.5px;
+    color: rgba(255, 255, 255, 0.67);
+}
