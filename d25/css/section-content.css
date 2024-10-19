@@ -1,0 +1,67 @@
+section.section-content {
+    margin-top: 200px;
+}
+
+section.section-content div.list-content {
+    display: flex;
+    margin-bottom: 50px;
+}
+
+section.section-content div.color {
+    position: relative;
+    z-index: 1;
+    margin-bottom: 48px;
+}
+
+section.section-content h2 {
+    margin-top: 100px;
+    font-size: 120px;
+    font-weight: 600;
+    line-height: 120px;
+    letter-spacing: -2px;
+    color: #FFFFFF;
+}
+
+section.section-content svg {
+    margin-top: -130px;
+    position: absolute;
+    z-index: -1;
+}
+
+section.section-content div.frame {
+    background: rgba(255, 255, 255, 0.1);
+    right: 0px;
+    position: absolute;
+    height: 733px;
+    width: 999px;
+    padding: 120px 120px 403px 321px;
+}
+
+section.section-content div.frame span {
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 50px;
+    color: #FFFFFF;
+    display: block;
+}
+
+section.section-content div.frame button {
+    background: #25AB75;
+    border-radius: 10px;
+    margin-top: 50px;
+    padding: 24px 43px;
+}
+
+section.section-content div.frame button.get-started {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 22px;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+div.picture-content article img.list-img  {
+    width: 100%;
+    aspect-ratio: 558 / 514;
+    object-fit: cover;
+}
