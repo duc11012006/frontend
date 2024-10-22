@@ -104,6 +104,9 @@
   padding: 28px 30px;
   border-radius: 20px;
   margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  border: none;
  }
 
  section.section-slider div.button-time span.yellow {
@@ -125,4 +128,7 @@
   color: rgba(255, 255, 255, 1);
   padding: 28px 30px;
   border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  border: none;
  }

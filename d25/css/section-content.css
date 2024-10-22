@@ -59,6 +59,7 @@ section.section-content div.frame button.get-started {
     line-height: 22px;
     color: #FFFFFF;
     cursor: pointer;
+    border: none;
 }
 
 /* div.picture-content div.list-coach   {
