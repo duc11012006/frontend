@@ -1,5 +1,7 @@
  section.section-slider {
     padding: 0px 120px;
+    margin-bottom: -190px;
+
  }
 
  section.section-slider p.notify {
@@ -10,7 +12,7 @@
     line-height: 18px;
     letter-spacing: 0.5px;
     color: rgba(255, 255, 255, 1);
-    padding: 10px;
+    padding: 5px;
     background: rgba(255, 255, 255, 0.1);
  }
 
@@ -70,4 +72,57 @@
    background: rgba(255, 255, 255, 0.1);
    color: rgba(255, 255, 255, 1);
    cursor: pointer;
+ }
+
+ section.section-slider div.content {
+  position: relative;
+ }
+
+ section.section-slider div.image {
+  display: flex;
+  /* position: absolute; */
+  justify-content: flex-end;
+  margin-top: -725px;
+  margin-right: -100px;
+ }
+
+ section.section-slider div.image img {
+  aspect-ratio: 780 / 1170;
+  width: calc(50%);
+  object-fit: cover;
+ }
+
+ section.section-slider div.button-time {
+  position: absolute;
+  padding: 0 40px;
+  margin-top: 335px;
+ }
+
+ section.section-slider div.button-time button.time-top {
+  background: rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 1);
+  padding: 28px 30px;
+  border-radius: 20px;
+  margin-bottom: 20px;
+ }
+
+ section.section-slider div.button-time span.yellow {
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 40px;
+  color: rgba(255, 230, 66, 1);
+ }
+
+ section.section-slider div.button-time span.red {
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 40px;
+  color: rgba(251, 19, 81, 1);
+ }
+
+ section.section-slider div.button-time button.time-bottom {
+  background: rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 1);
+  padding: 28px 30px;
+  border-radius: 20px;
  }

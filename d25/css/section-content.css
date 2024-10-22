@@ -1,8 +1,9 @@
 section.section-content {
     margin-top: 200px;
+    margin-bottom: 150px;
 }
 
-section.section-content div.list-content {
+section.section-content div.content {
     display: flex;
     margin-bottom: 50px;
 }
@@ -37,7 +38,7 @@ section.section-content div.frame {
     padding: 120px 120px 403px 321px;
 }
 
-section.section-content div.frame span {
+section.section-content div.frame p {
     font-size: 25px;
     font-weight: 400;
     line-height: 50px;
@@ -60,8 +61,72 @@ section.section-content div.frame button.get-started {
     cursor: pointer;
 }
 
-div.picture-content article img.list-img  {
-    width: 100%;
+/* div.picture-content div.list-coach   {
+
+} */
+
+/* div.picture-content div.list-coach div.coach   {
+
+}    */
+
+ div.two-img {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+img.list-img {
+    position: relative;
     aspect-ratio: 558 / 514;
     object-fit: cover;
+    border-radius: 0;
+    width: 100%;
+}
+
+img.trainer {
+    aspect-ratio: 321 / 321;
+    object-fit: cover;
+    border-radius: 0;
+}
+
+img.trainer-top {
+    aspect-ratio: 321 / 321;
+    object-fit: cover;
+    border-radius: 0;
+}
+
+/* div.coach div.coach-bottom {
+    margin-left: 220px;
+} */
+
+div.coach-center {
+    width: 25%;
+    transform: translateY(83%);
+}
+
+div.coach{
+    width: 25%;
+}
+
+div.coach-bottom {
+    width: 50%;
+}
+
+div.coach-bottom div.botton {
+    margin-left: 20px;
+}
+
+div.list-coach h3 {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 25px;   
+    color: rgba(255, 255, 255, 1);
+}
+
+div.list-coach span {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 14px;
+    color: rgba(255, 255, 255, 0.5);
+    margin-top: 5px;
 }
