@@ -11,7 +11,7 @@ div.exercise {
 }
 
 div.exercise:last-child {
-    margin-bottom: 0px;
+    border-bottom: 0;
 }
 .exercise .number {
     flex: 1;
