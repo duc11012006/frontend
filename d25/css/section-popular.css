@@ -54,6 +54,8 @@ article div.content h3 {
     line-height: 45px;
     letter-spacing: 0.30000001192092896px;
     color: rgba(255, 255, 255, 1);
+    margin-bottom: 15px;
+    margin-left: 10px;
 }
 
 article div.content div.list-title {
@@ -85,4 +87,5 @@ article div.content span.target {
     line-height: 14px;
     letter-spacing: 0.5px;
     color: rgba(255, 255, 255, 0.67);
+    margin-left: 10px;
 }

@@ -44,6 +44,7 @@ section.section-content div.frame p {
     line-height: 50px;
     color: #FFFFFF;
     display: block;
+    margin-left: 119px;
 }
 
 section.section-content div.frame button {
@@ -51,6 +52,7 @@ section.section-content div.frame button {
     border-radius: 10px;
     margin-top: 50px;
     padding: 24px 43px;
+    margin-left: 119px;
 }
 
 section.section-content div.frame button.get-started {
@@ -61,7 +63,6 @@ section.section-content div.frame button.get-started {
     cursor: pointer;
     border: none;
 }
-
 /* div.picture-content div.list-coach   {
 
 } */
