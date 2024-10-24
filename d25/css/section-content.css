@@ -77,6 +77,11 @@ section.section-content div.frame button.get-started {
     align-items: baseline;
 }
 
+div.coach {
+    font-size: 0px;
+}
+
+
 img.list-img {
     position: relative;
     aspect-ratio: 558 / 514;
@@ -89,6 +94,7 @@ img.trainer {
     aspect-ratio: 321 / 321;
     object-fit: cover;
     border-radius: 0;
+    margin-top: -60px;
 }
 
 img.trainer-top {
@@ -101,9 +107,17 @@ img.trainer-top {
     margin-left: 220px;
 } */
 
+div.coach-info {
+    height: 60px;
+    font-size: 0;
+}
+div.coac-info:last-child {
+    padding-left: 20px;
+}
+
 div.coach-center {
     width: 25%;
-    transform: translateY(83%);
+    transform: translateY(100%);
 }
 
 div.coach{

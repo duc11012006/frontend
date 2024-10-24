@@ -8,6 +8,12 @@
         margin-top: 20px;
         margin-bottom: 100px;
     }
+
+    @media only screen and (max-width: 450px) {
+        section.section-slider {
+            margin-top: -50px;
+        }
+    }
     
     header nav a.workout {
         font-size: 15px;
@@ -27,7 +33,164 @@
     section.section-slider h1 {
         font-size: 100px;
         font-weight: 600;
-        /* margin-top: 30px;
-        margin-bottom: 12px; */
+        line-height: 135px;
+        margin-top: -10px;
+    }
+
+    section.section-slider p {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 27px;
+        color: rgba(255, 255, 255, 0.5);
+        margin-bottom: 30px;
+    }
+
+    section.section-slider div.button {
+        display: flex;
+    }
+
+    section.section-slider div.button button.get-started {
+        padding: 13px 25px;
+    }
+
+    section.section-slider div.button button.Preview {
+        padding: 20px 40px;
+    }
+
+    section.section-popular div.title h2 {
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 45px;
+    }
+
+    section.section-popular div.title a.see {
+        font-size: 10px;
+    }
+
+    section.section-popular div.title {
+        margin-top: 250px;
+    }
+
+    section.section-popular article {
+        display: block;
+        flex-wrap: wrap;
+        gap: 80px 40px;
+    }
+
+    section.section-popular article div.list-picture {
+        width:  100%;
+    }
+
+    section.section-slider div.image {
+        display: flex;
+        /* position: absolute; */
+        justify-content: flex-start;
+        margin-top: 0;
+        margin-right: -50px;
+    }
+
+    section.section-slider div.image img {
+        width: 70%;
+    }
+
+    section.section-popular article div.list-picture div.content {
+        margin-bottom: 20px;
+    }
+
+    section.section-slider div.button-time {
+        position: none;
+        padding: 0 20px;
+        margin-top: 144px;
+        margin-left: 202px;
+    }
+
+    section.section-slider div.button-time button.time-top {
+        padding: 10px;
+    }
+
+
+    section.section-slider div.button-time button.time-bottom {
+        padding: 13px;
+    }
+
+    section.section-content div.content {
+        display: block;
+    }
+
+    section.section-content {
+        margin-top: 0px;
+    }
+
+    section.section-content div.color {
+        /* position: relative; */
+        z-index: 1;
+        margin-bottom: 80px;
+    }
+
+    section.section-content h2 {
+        font-size: 85px;
+        font-weight: 600;
+        line-height: 80px;
+    }
+
+    section.section-content div.frame p {
+        font-size: 25px;
+        font-weight: 400;
+        line-height: 50px;
+        color: #FFFFFF;
+        display: block;
+        margin-left: 0px;
+    }
+
+    section.section-content div.frame {
+        /* position: relative; */
+        padding: 120px 120px 403px 321px;
+    }
+
+    @media only screen and (max-width: 450px) {
+        section.section-content div.frame {
+            position: relative;
+            padding-left: 10px;
+            padding-top: 20px;
+            width: 500px;
+        }
+    }
+
+    @media only screen and (max-width: 450px) {
+        section.section-content div.frame p {
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 55px;
+            /* color: #FFFFFF; */
+            /* display: flex; */
+            margin-left: 0px;
+            width: 100%;;
+        }
+    }
+
+    section.section-content div.frame button.get-started {
+        margin-top: 80px;
+    }
+
+    div.list-coach {
+        margin-top: -127px;
+    }
+
+    section.section-list-exercise {
+        margin-top: 0px;
+    }
+
+    div.exercise div.exercise-block {
+        margin-left: -43px;
+    }
+
+    div.exercise h4 {
+        font-size: 25px;
+        line-height: 70px;
+        color: rgb(255, 255, 255);
+    }
+
+    div.exercise span.number {
+        font-size: 20px;
     }
 }
