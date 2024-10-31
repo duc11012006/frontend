@@ -100,7 +100,7 @@
     section.section-slider div.button-time {
         position: none;
         padding: 0 20px;
-        margin-top: 144px;
+        margin-top: 100px;
         margin-left: 202px;
     }
 
@@ -109,7 +109,7 @@
     }
 
     section.section-content svg {
-        width: 100%;
+        width: 170%;
     }
 
     section.section-slider div.button-time button.time-bottom {
@@ -130,10 +130,19 @@
         margin-bottom: 80px;
     }
 
-    section.section-content h2 {
+    div.left h2 {
         font-size: 85px;
         font-weight: 600;
         line-height: 80px;
+    }
+
+    .header {
+        flex-direction: column;
+        padding: 0px 30px 153px 30px;
+    }
+
+    .background {
+        background: none;
     }
 
     section.section-content div.frame p {
@@ -145,6 +154,41 @@
         margin-left: 0px;
     }
 
+    div.left svg {
+        width: 100%;
+    }
+
+    section.section-popular div.list-exericse {
+        margin-bottom: 100px;
+    }
+
+    .header p {
+        padding-top: 100px;
+    }
+
+    .trainers {
+        flex-direction: column;
+        padding: 0px 30px;
+    }
+
+    .trainer img {
+        max-height: none;
+    }
+
+    .trainer {
+        width: 100%;
+    }
+
+    .main-trainer {
+        transform: none;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    div.big div.info {
+        margin-left: 0;
+    }
+
     @media only screen and (max-width: 450px) {
         section.section-content div.frame {
             position: relative;
@@ -152,22 +196,6 @@
             padding-top: 20px;
             width: 100%;
         }
-    }
-
-    @media only screen and (max-width: 450px) {
-        section.section-content div.frame p {
-            font-size: 24px;
-            font-weight: 400;
-            line-height: 55px;
-            /* color: #FFFFFF; */
-            /* display: flex; */
-            margin-left: 0px;
-            width: 350px;;
-        }
-    }
-
-    section.section-content div.frame button.get-started {
-        margin-top: 80px;
     }
 
     div.list-coach {
@@ -190,5 +218,70 @@
 
     div.exercise span.number {
         font-size: 20px;
+    }
+
+    @media only screen and (max-width: 450px) {
+        section.section-content div.content {
+            display: block;
+            background-color: none;
+        }
+    }
+
+    section.section-content div.frame {
+        margin-left: -25px;
+        margin-top: 500px;
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+
+    div.coach {
+        width: 50%;
+        margin-top: 1110px;
+        margin-left: 86px;
+    }
+
+    img.trainer-top {
+        width: 100%;
+        /* position: relative; */
+    }
+
+    div.coach-center {
+        transform: translateY(565%);
+    }
+
+    div.coach-bottom {
+        position: absolute;
+        margin-top: -110px ;
+    }
+
+    img.trainer {
+        width: 100%;
+    }
+
+    @media only screen and (max-width: 450px) {
+        section.section-list-exercise {
+            margin-top:50px;
+        }
+    }
+
+    img.list-img {
+        position: absolute;
+        margin-left: 67px;
+    }
+
+    div.coach-infoo {
+        padding-top: 270px;
+        padding-left: 60px;
+    }
+
+    @media only screen and (max-width: 450px) {
+        section.section-content div.frame button.get-started {
+            margin-left: 80px;
+            margin-bottom: 200px;
+        }
+    }
+    @media only screen and (max-width: 450px) {
+        section.section-content div.content {
+            background: none;
+        }
     }
 }
