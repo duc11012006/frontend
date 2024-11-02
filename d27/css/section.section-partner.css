@@ -1,0 +1,9 @@
+section.section-partner {
+  padding: 52px 150px;
+  background: rgba(246, 251, 249, 1);
+}
+
+section.section-partner ul.list-partner {
+  display: flex;
+  justify-content: space-around;
+}
