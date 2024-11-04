@@ -1,6 +1,6 @@
 header {
     padding: 0px 60px;
-    background-image: url("../img/hero.png");
+    background-image: url("../img/hero3.jpg");
 }
 
 header nav  {
@@ -52,19 +52,26 @@ header nav a.list-menu {
     text-decoration: none;
 }
 
-div.list-slider {
-    display: flex;
-    padding-top: 105px;
-    justify-content: space-between;
-}
-
  h2 {
     font-size: 36px;
     font-weight: 500;
     line-height: 42.66px;
     letter-spacing: 0.02em;
     color: rgba(255, 255, 255, 0.8);
-    text-align: center;
+}
+
+ div.list-slider {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding-top: 105px;
+    gap: 50px;
+}
+
+div.list-slider span.line {
+    width: 60px;
+    height: 2px;
+    background-color: rgba(255, 255, 255, 0.4);
 }
 
 h1 {
@@ -85,8 +92,8 @@ div.slider p {
 }
 
 button.get-started {
-   margin-top: 70px;
-   margin-bottom: 203px;
+    margin-top: 70px;
+    margin-bottom: 203px;
     margin-left: 500px;
     font-size: 20px;
     font-weight: 600;
