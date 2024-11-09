@@ -1,0 +1,71 @@
+section.hero-green {
+    padding-left: 104px;
+    width: 100%;
+}
+
+div.header {
+    width: 50%;
+}
+
+div.hero-img {
+    width: 50%;
+}
+
+div.header img {
+    margin-top: 56px;
+}
+
+div.button {
+    margin-bottom: 165px;
+}
+
+div.header h1 {
+    font-size: 56px;
+    font-weight: 900;
+    line-height: 80px;
+    letter-spacing: 0.02em;
+    color: rgba(6, 78, 59, 1);
+    margin-top: 161px;
+    margin-bottom: 64px;
+}
+
+div.header h1 span {
+    color: rgba(6, 130, 63, 49);
+}
+
+div.header button.become {
+    padding: 14px 28px;
+    font-family: "Work Sans";
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 25.2px;
+    color: rgba(255, 255, 255, 1);
+    background: linear-gradient(4.01deg, #059669 3.04%, #36DCA5 96.51%);
+    border: 1px solid rgba(16, 185, 129, 1)
+}
+
+div.header button.see {
+    padding: 14px 28px;
+    font-family: "Work Sans";
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 25.2px;
+    color: rgba(16, 185, 129, 1);
+    border: 1px solid rgba(16, 185, 129, 1);
+    background-color: #fff;
+    margin-left: 5px;
+}
+
+div.hero-header {
+    display: flex;
+}
+
+div.hero-img img.people {
+    position: relative;
+}
+
+div.hero-img img.time {
+    position: absolute;
+    left: 50%;
+    top: 620px;
+}
