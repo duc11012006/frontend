@@ -1,0 +1,88 @@
+section.section-suga {
+    padding: 90px 0px 0px 104px;
+    position: relative;
+}
+
+div.scrubs {
+    background: rgba(236, 253, 245, 1);
+    width: 772px;
+    height: 485px;
+    padding-left: 73px ;
+    position: absolute;
+    top: 0;
+    padding-right: 100px;
+}
+
+button.exclusive {
+    padding: 6px 15px;
+    background: rgba(4, 120, 87, 1);
+    font-family: "Work Sans";
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22.4px;
+    color: rgba(236, 253, 245, 1);
+    border: none;
+    margin-top: 77px;
+}
+
+h3 {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 56px;
+    color: rgba(4, 120, 87, 1);
+    margin-bottom: 24px;
+}
+
+p.sugar {
+    font-family: "Work Sans";
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 27px;
+    color: rgba(4, 120, 87, 1);
+    margin-bottom: 20px;
+}
+
+p.brown {
+    font-family: "Work Sans";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    color: rgba(4, 120, 87, 1);
+    margin-bottom: 24px;
+}
+
+p.brown span {
+    font-family: "Work Sans";
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 27px;
+    color: rgba(4, 120, 87, 1);
+}
+
+div.scrubs a {
+    font-family: "Work Sans";
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 25.2px;
+    color: rgba(4, 120, 87, 1);
+}
+
+div.suga-green {
+    height: 451px;
+    background: linear-gradient(30.63deg, #059669 26.17%, #10B981 97.06%);
+    margin-left: 0px;
+}
+
+img.green {
+    width: 60%;
+    aspect-ratio: 1002 / 668;
+    object-fit: cover;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+div.suga-center {
+    display: flex;
+}

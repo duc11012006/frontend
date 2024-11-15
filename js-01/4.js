@@ -1,5 +1,5 @@
-let one = 100, 
-two = 5, 
-three = 19;
+let one = 1, 
+two = -6, 
+three = 6;
 
 console.log(`Max ${one}, ${two}, ${three}: ${Math.max(one, two, three)}`);
