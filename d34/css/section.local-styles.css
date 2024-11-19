@@ -1,0 +1,26 @@
+section.local-styles {
+    padding-left: 80px;
+    padding-right: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+
+div.index-styles {
+    display: flex;
+    gap: 11px;
+}
+
+div.index-styles  select.Headphone-type {
+    padding: 10px 14px;
+}
+
+section.local-styles  select {
+    padding: 10px 14px;
+    border-radius: 28px;
+    background: #EBEDEC;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16.94px;
+    color: #1D364D;
+    border: none;
+}
