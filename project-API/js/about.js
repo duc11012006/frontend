@@ -4,7 +4,6 @@ dayjs.extend(window.dayjs_plugin_relativeTime);
 
 const elmListCategort = document.getElementById('elm-list-categort');
 const elmArticlesRecommended = document.getElementById('articlesRecommended');
-const elmWidgetItem = document.getElementById('widgetItem');
 const elmSectionContainer = document.getElementById('sectionContainer');
 const elmContentLeft = document.getElementById('contentLeft')
 
@@ -67,17 +66,7 @@ axios.get(`${BASE_URL}articles?offset=15&limit=4`).then((response) => {
   });
 
 
-axios.get(`${BASE_URL}categories_news?offset=0&limit=10`).then((response) => {
-    const categories = response.data.data;
-  
-    let html = '';
-    categories.forEach(item => {
-      html += /* html */ `              
-      <li><a href="#!">${item.name}<span class="ml-auto">(${item.id})</span></a>
-      </li>`
-    });
-    elmWidgetItem.innerHTML = html;
-  });
+
 
 
 axios.get(`${BASE_URL}articles?offset=20&limit=1`).then((response) => {
@@ -99,4 +88,3 @@ axios.get(`${BASE_URL}articles?offset=20&limit=1`).then((response) => {
     elmContentLeft.innerHTML = html;
   });
 
-"${item.name} ${item.title} ${item.content} ${item.thumb}"
