@@ -1,0 +1,197 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "IBM Plex Sans";
+    font-size: 18px;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    font-family: inherit;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center ;
+    padding: 25px 45px;
+    /* vertical-align: middle;
+    text-align: center; */
+}
+
+nav a.logo {
+    font-size: 22px;
+    font-weight: 700;
+    color: #14203E3D;
+}
+
+nav ul.menu {
+    display: flex;
+    gap: 56px;
+}
+
+nav ul.menu li {
+    list-style: none;
+}
+
+nav ul.menu li a {
+    font-size: 18px;
+    font-weight: 400;
+    color: #14203E;
+}
+
+nav div.button {
+    display: flex;
+    gap: 15px;
+}
+
+div.button button {
+    padding: 13px 30px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+div.button button.login {
+    background: #F6F0E8;
+    color: #000000;
+}
+
+div.button button.free {
+    background: #14203E;
+    color: #FFFFFF;
+}
+
+section.section-content {
+    background: #FFFCF8;
+    padding: 130px 15px;
+    text-align: center;
+}
+
+section.section-content div.content{
+    max-width: 600px;
+    margin:auto;
+}
+
+section.section-content h2 {
+    font-size: 66px;
+    font-weight: 700;
+    line-height: 71.94px;
+}
+
+section.section-content p {
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 28.6px;
+    margin-top: 30px;
+
+}
+
+section.section-content button {
+    margin-top: 40px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 23.4px;
+    background: #14203E;
+    color: #FFFFFF;
+    border-radius: 10px;
+    padding: 25px 40px;
+    border: none;
+    cursor: pointer;
+}
+
+section.section-articles {
+    padding: 30px;
+}
+
+section.section-articles div.title {
+    align-items: center;
+    display: flex;
+    margin-bottom: 30px;
+    justify-content: center;
+}
+
+section.section-articles div.title span.line {
+    height: 1px;
+    width: 200px;
+    background: rgba(20, 32, 62, 0.2);
+}
+
+section.section-articles div.title h3 {
+    font-family: "IBM Plex Sans";
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 18.2px;
+    color: #14203E;
+    margin-left: 9px;
+    margin-right: 9px;
+}
+
+section.section-articles div.list-articles {
+    display: flex;
+    gap: 30px;
+}
+
+section.section-articles div.list-articles article {
+    background: rgba(255, 255, 255, 1);
+    width: 25%;
+}
+
+section.section-articles article img {
+    width: 100%;
+    margin-bottom: 20px;
+    aspect-ratio: 290 / 231;
+    object-fit: cover;
+}
+
+section.section-articles div.list-articles article span {
+    font-family: "IBM Plex Sans";
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 23.98px;
+    color: rgba(20, 32, 62, 1);
+}
+
+section.section-articles div.list-articles article h5 {
+    font-family: IBM Plex Sans;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18.2px;
+    color: rgba(20, 32, 62, 1);
+    margin-top: 15px;
+}
+
+/* <div class="list-articles">
+            <article>
+                <img src="picture2.png">
+                <span>Redesigning my site increased sales by over 400% in one week.</span>
+                <h5>Jul 1, 2020</h5>
+            </article>
+
+            <article>
+                <img src="img/picture3.png">
+                <span>Design handoff: What engineers really want to see</span>
+                <h5>Jul 1, 2020</h5>
+            </article>
+
+
+            <article>
+                    <img src="img/picture1.png">
+                    <span>A comprehensive list of human-computer interactions</span>
+                    <h5>Jul 1, 2020</h5>
+            </article>
+
+
+            <article></article>
+                <img src="img/picture.png">
+                <span>Why do people hate redesigns?</span>
+                <h5>Jul 1, 2020</h5>
+            </article>
+        </div> */

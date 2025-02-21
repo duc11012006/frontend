@@ -1,0 +1,32 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 1000px;
+  margin: 50px auto;
+  background-color: #fed049;
+  font-size: 0;
+}
+
+.item {
+  font-size: 20px;
+  display: inline-block;
+  vertical-align: middle;
+  background-color: #007580;
+  color: white;
+  padding: 20px;
+  margin: 15px;
+  width: calc(25% - 30px);
+  text-indent: 30px;
+}
+
+.item:nth-child(even) {
+  background-color:  #007580; 
+}
+
+Span.more {display: none }

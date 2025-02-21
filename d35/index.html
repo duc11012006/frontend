@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <section class="traffic-light">
+        <div class="top">
+            <span class="circle" id="yellow"></span>
+            <span class="circle" id="green"></span>
+            <span class="circle" id="red"></span>
+            <span class="text">15</span>
+        </div>
+        <div class="bottom"></div>
+
+    </section>
+
+    <div class="button">
+        <button onclick="changeColor('red', this)" class="red"></button>
+        <button onclick="changeColor('yellow', this)" class="yellow"></button>
+        <button onclick="changeColor('green', this)" class="green"></button>
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+
+</html>

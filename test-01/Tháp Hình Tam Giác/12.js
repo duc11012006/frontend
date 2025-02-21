@@ -1,0 +1,10 @@
+let height = 5;
+let shape = "";
+let record ="";
+
+for (let i = 1; i <= height; i++) {
+    record = "=".repeat(i-1) + "+".repeat(height + 1 - i);
+    shape += record + "\n";
+}
+
+console.log(shape)

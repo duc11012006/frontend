@@ -1,4 +1,4 @@
-const BASE_URL = 'https://apiforlearning.zendvn.com/api/';
+const BASE_URL = 'https://apiforlearning.zendvn.com/api/v2/';
 
 dayjs.extend(window.dayjs_plugin_relativeTime);
 dayjs.locale('vi');
@@ -8,6 +8,9 @@ const elmCategoryTitle = document.getElementById('categoryTitle');
 const elmArticles = document.getElementById('articles');
 const elmWidgetNews = document.getElementById('widgetNews');
 const elmArticlesRecommended = document.getElementById('articlesRecommended');
+const elmWidgetItem = document.getElementById('widgetItem');
+const elmListGold = document.getElementById('List-Gold');
+const elmListCoin = document.getElementById('list-coin');
 
 const queryString = window.location.search;
 const urlParams = new URLSearchParams(queryString);
@@ -17,7 +20,7 @@ const id = parseInt(urlParams.get('id'));
 
 // RENDER MENU
 axios.get(`${BASE_URL}categories_news`).then((response) => {
-    const categories = response.data;
+    const categories = response.data.data;
   
     let htmlMenu = '';
     categories.forEach(item => {
@@ -30,7 +33,7 @@ axios.get(`${BASE_URL}categories_news`).then((response) => {
 //   categories_news/1
 
 axios.get(`${BASE_URL}categories_news/${id}`).then((response) =>{
-    const category = response.data;
+    const category = response.data.data;
     
     elmCategoryTitle.innerHTML = category.name; 
 });
@@ -39,7 +42,7 @@ axios.get(`${BASE_URL}categories_news/${id}`).then((response) =>{
 // categories_news/1/articles?offset=0&limit=10
 
 axios.get(`${BASE_URL}categories_news/${id}/articles?offset=3&limit=10`).then((response) =>{
-    const categories = response.data;
+    const categories = response.data.data;
     let htmlMenu = '';
     categories.forEach(item => {
         let content = item.content.split(' ').slice(0, 20).join(' ') + "...";
@@ -60,7 +63,7 @@ axios.get(`${BASE_URL}categories_news/${id}/articles?offset=3&limit=10`).then((r
 									</ul>
 									<h2><a class="post-title" href="article.html?id=${item.id}">${item.title}</a></h2>
 									<p class="card-text">${content}</p>
-									<div class="content"> <a class="read-more-btn" href="/articles/travel/post-1/">Read Full Article</a>
+									<div class="content"> <a class="read-more-btn" href="article.html?id=${item.id}">Read Full Article</a>
 									</div>
 								</div>
 							</article>
@@ -71,7 +74,7 @@ axios.get(`${BASE_URL}categories_news/${id}/articles?offset=3&limit=10`).then((r
 
 
 axios.get(`${BASE_URL}articles?offset=7&limit=1`).then((response) => {
-    const articles = response.data;
+    const articles = response.data.data;
   
     let html = '';
     articles.forEach(item => {
@@ -94,7 +97,7 @@ axios.get(`${BASE_URL}articles?offset=7&limit=1`).then((response) => {
 
 
 axios.get(`${BASE_URL}articles?offset=9&limit=4`).then((response) => {
-  const articles = response.data;
+  const articles = response.data.data;
 
   let html = '';
   articles.forEach(item => {
@@ -119,8 +122,60 @@ axios.get(`${BASE_URL}articles?offset=9&limit=4`).then((response) => {
 });
   
 
+axios.get(`${BASE_URL}categories_news?offset=0&limit=10`).then((response) => {
+  const categories = response.data.data;
+  console.log(response)
 
+
+  let html = '';
+  categories.forEach(item => {
+      let classActive = "";
+      if(id === item.id){
+          classActive = 'class="active"';
+      }
+    html += /* html */ `              
+    <li><a ${classActive} href="category.html?id=${item.id}">${item.name}<span class="ml-auto">(${item.id})</span></a>
+    </li>`
+  });
+  elmWidgetItem.innerHTML = html;
+});
   
+
+axios.get(`https://apiforlearning.zendvn.com/api/get-gold`).then((response) => {
+  const items = response.data;
+
+  let html = '';
+  items.forEach(item => {
+    html += /* html */ `                
+      <tr>
+						<td>${item.type}</td>
+						<td>${item.sell}</td>
+						<td>${item.buy}</td>
+      </tr>` 
+  });
+  elmListGold.innerHTML = html;
+});
+
+
+axios.get(`https://apiforlearning.zendvn.com/api/get-coin`).then((response) => {
+  const items = response.data;
+
+  let html = '';
+  items.forEach(item => {
+    let CoinActive = "";
+    if(item.percent_change_24h < 0) {
+      CoinActive = 'class ="active-coin"'
+    }
+    html += /* html */ `              
+      <tr>
+        <td class="much-coin">${item.name}</td>
+        <td class="much-coin">${item.price.toFixed(2)}</td>
+        <td ${CoinActive} class="much-coin">${item.percent_change_24h.toFixed(2)}</td>
+      </tr>
+	` 
+  });
+  elmListCoin.innerHTML = html;
+}); 
 
 
 

@@ -1,3 +1,76 @@
-section.section-footer img {
-    width: 100%;
+section.section-footer {
+    padding: 0 50px;
+}
+
+div.mask-group {
+    background-image: url("../img/background.png");
+    padding-bottom: 110px;
+    position: relative;
+}
+
+div.other {
+    margin-left: 105px;
+}
+
+
+div.other p {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 55px;
+    letter-spacing: 0.01em;
+    color: rgba(255, 255, 255, 1);
+    margin-top: 100px;
+    margin-bottom: 30px;
+}
+
+div.other img {
+    margin-bottom: 62px;
+}
+
+div.mask-other {
+    display: flex;
+    position: relative;
+}
+
+button.email {
+    padding: 28px 238px 28px 40px;
+    border-radius: 192px;
+    border: 1px solid;
+    border-image-source: linear-gradient(180deg, rgba(255, 255, 255, 0.2) 0%, rgba(255, 255, 255, 0) 100%);
+    background: linear-gradient(332.09deg, #FFFFFF 3.37%, #E2E2E2 132.9%);
+    box-shadow: 0px 34px 50px 0px rgba(7, 63, 67, 0.07);
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 21.33px;
+    letter-spacing: 0.02em;
+    color: rgba(20, 24, 62, 1);
+    cursor: pointer;
+}
+
+button.subscribe {
+    padding: 27px 70px;
+    margin-left: 30px;
+    border-radius: 192px;
+    background: linear-gradient(328.68deg, #98AA28 13.03%, #D6FF7E 120.61%);
+    box-shadow: 0px 34px 50px 0px rgba(7, 63, 67, 0.07);
+    border: 1px solid;
+    border-image-source: linear-gradient(283.81deg, rgba(255, 255, 255, 0.69) 11.22%, rgba(255, 255, 255, 0.25) 89.57%);
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 23.7px;
+    letter-spacing: 0.02em;
+    color: rgba(255, 255, 255, 1);
+    cursor: pointer;
+}
+
+img.group-294 {
+    position: absolute;
+    max-width: 180px;
+    bottom: 0;
+    right: 0;
+    transform: translate(48px, 25px);
+}
+
+div.button-email {
+    padding-left: 210px;
 }

@@ -1,4 +1,4 @@
-// index/key    0                               1               2           3               4       5
+// index/key    0                               1               2           3               4       5 
 // value        Complete Javascript course      record video        
 let TODO_LIST = JSON.parse(localStorage.getItem("zendvn_todo_list")) || [];
 let result = "";
@@ -14,16 +14,7 @@ let btnCancel = document.getElementById("btnCancel");
 let elmTodoList = document.getElementById("todoList");
 let idEdit = -1;
 
-
 renderList(TODO_LIST);
-
-function  funcDelete(index) {
-    TODO_LIST.splice(index, 1);
-    renderList(TODO_LIST);
-    localStorage.setItem("zendvn_todo_list", JSON.stringify(TODO_LIST));
-}
-
-
 
 
 function renderList (arrayList){
@@ -45,7 +36,31 @@ elmTodoList.innerHTML = result;
 }
 
 
+function funcEdit (index){
+  idEdit = index;
+  btnCreate.innerText = 'Edit';
+  console.log(index);
+  console.log(TODO_LIST[index]);
+  inputTodo.value = TODO_LIST[index];
+}
+
+
+function  funcDelete(index) {
+  TODO_LIST.splice(index, 1);
+  renderList(TODO_LIST);
+  localStorage.setItem("zendvn_todo_list", JSON.stringify(TODO_LIST));
+}
+
+
+inputTodo.addEventListener('keydown', function (event) {
+  if (event.key == 'Enter') btnCreate.click();
+  if (event.key == 'Escape') btnCancel.click();
+})
+
+
+
 btnCreate.addEventListener('click', function (){
+
   let name = inputTodo.value;
   name = name.trim(String);
   if(name != "" && name.length > 3){
@@ -61,18 +76,14 @@ btnCreate.addEventListener('click', function (){
   }else{
     alert("Nhập đúng thông tin")
   }
+
+
   localStorage.setItem("zendvn_todo_list", JSON.stringify(TODO_LIST));
 
   console.log(inputTodo);
 });
 
-function funcEdit (index){
-  idEdit = index;
-  btnCreate.innerText = 'Edit';
-  console.log(index);
-  console.log(TODO_LIST[index]);
-  inputTodo.value = TODO_LIST[index];
-}
+
 
 btnCancel.addEventListener('click', function (){
   inputTodo.value = "";
@@ -84,9 +95,9 @@ btnCancel.addEventListener('click', function (){
 
 btnSearch.addEventListener('click', function (){
   let search = inputSearch.value;
-  let arrSearch = TODO_LIST.filter(function (str) { return str.includes(search); });
+  let arrSearch = TODO_LIST.filter(function (str) { return str.includes(search) });
 
-  renderList(arrSearch)
+  renderList(arrSearch);
 });
 
 
@@ -94,6 +105,7 @@ btnClear.addEventListener('click', function(){
   inputSearch.value = "";
   renderList(TODO_LIST);
 });
+
 
 
 let originalTODO_LIST = [...TODO_LIST];

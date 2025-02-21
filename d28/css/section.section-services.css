@@ -2,8 +2,9 @@ section.section-services {
   background: rgba(255, 255, 255, 1);
   padding-left: 110px;
   padding-right: 110px;
-  margin-bottom: -60px;
   padding-top: 110px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 div.service-bottom img {
@@ -12,12 +13,14 @@ div.service-bottom img {
 }
 
 div.services-left {
-  width: 42%;
+  width: 40%;
 }
 
 div.services-right {
-  width: 58%;
-  display: contents;
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 110px;
 }
 
 div.services-left h3 {
@@ -44,7 +47,7 @@ div.services-left a {
   line-height: 28.44px;
   letter-spacing: 0.02em;
   text-align: left;
-  color: rgba(163, 185, 56, 1);
+  color:rgba(163, 185, 56, 1);
 }
 
 div.services-left i {
@@ -70,21 +73,21 @@ div.box-services p {
 div.box-above {
   display: flex;
   justify-content: flex-end;
-  transform: translateY(-160%);
   gap: 50px;
+  background-color: aquamarine;
 }
 
 div.box-below {
   display: flex;
   justify-content: flex-end;
-  transform: translateY(-120%);
   gap: 50px;
+  background-color: blue;
 }
 
 div.service-bottom {
   display: flex;
   gap: 110px;
-  transform: translateY(-25%);
+  margin-top: 40px;
 }
 
 div.service-bottom h5 {
@@ -117,4 +120,14 @@ div.service-bottom button.get-right {
   border-radius: 192px;
   color: rgba(255, 255, 255, 1);
   margin-bottom: 147px;
+  cursor: pointer;
+}
+
+img.group-294 {
+  margin-left: 784px;
+}
+
+div.box-services {
+  width: 50%;
+  margin-bottom: 80px;
 }

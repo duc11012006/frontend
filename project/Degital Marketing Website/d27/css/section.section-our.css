@@ -1,0 +1,95 @@
+section.section-our {
+    background: rgba(246, 251, 249, 1);
+    text-align: center;
+    padding: 100px 151px;
+}
+
+section.section-our h6 {
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 65px;
+    letter-spacing: 0.02em;
+    color: rgba(37, 61, 50, 1);
+    margin-bottom: 30px;
+}
+
+section.section-our p {
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 26.07px;
+    color: rgba(120, 132, 125, 1);
+    margin-bottom: 50px;
+}
+
+div.progress img {
+    margin-top: 25px;
+}
+
+section.section-our a.see-more {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 28.44px;
+    letter-spacing: 0.02em;
+    color: rgba(163, 185, 56, 1);
+}
+
+section.section-our i {
+    margin-left: 16px;
+}
+
+div.list-progress {
+    display: flex;
+    gap: 100px;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+div.progress > a {
+    width: 40px;
+    display: inline-block;
+    height: 40px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 1);
+    border: 1px solid rgba(162, 189, 170, 1);
+}
+div.progress > a.big-cirle{
+    width: 100px;
+    height: 100px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+span.progress-title{
+    font-size: 22px;
+    font-weight: 500;
+    color: rgba(37, 61, 50, 1);
+    line-height: 35px;
+}
+
+span.processe {
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 35px;
+    color: rgba(37, 61, 50, 1);
+}
+div.progress {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+}
+
+div.progress a {
+    background-color: #fff;
+    font-size: 0px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+
+div.progress a span.circle {
+    display: inline-block;
+}
+
+div.progress a.list-circle {
+    display: inline-block;
+}

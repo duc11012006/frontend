@@ -7,6 +7,7 @@ header nav  {
     padding-top: 40px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 header nav a.markethink {
@@ -15,19 +16,13 @@ header nav a.markethink {
     font-weight: 600;
     line-height: 22px;
     color: rgba(255, 255, 255, 1);
-
 }
 
-header nav img {
-    width: 30px;
-    height: 30px;
-}
 
 header nav ul.menu {
     display: flex;
     gap: 52px;
     list-style: none;
-    align-items: center;
 }
 
 header nav ul.menu li a {
@@ -110,4 +105,5 @@ button.get-started {
     border: 1px solid;
     border-radius: 192px;
     border-image-source: linear-gradient(283.81deg, rgba(255, 255, 255, 0.69) 11.22%, rgba(255, 255, 255, 0.25) 89.57%);
+    cursor: pointer;
 }

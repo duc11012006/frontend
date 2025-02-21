@@ -1,0 +1,113 @@
+section.product-design-reviews {
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+
+.rating-container {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 50px;
+}
+
+.rating-score {
+    padding: 47px 93px;
+    background: #F9FAFB;
+    width: 298px;
+    height: 230px;
+    border-radius: 5px;
+}
+
+
+.rating-score p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    color: #4F547B;
+}
+
+
+h6 {
+    text-align: center;
+    font-family: Inter;
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 72.61px;
+    color: #164C96;
+}
+
+.rating-score span.star {
+    font-size: 24px;
+    font-weight: bold;
+    color: #E59819;
+}
+
+.rating-bars {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    background: #F9FAFB;
+    border-radius: 3px;
+    padding: 15px 27px;
+    width: 542px;
+    height: 230px;
+}
+
+.rating-bar {
+    display: flex;
+    align-items: center;
+}
+
+.progress-bar {
+    flex-grow: 1;
+    height: 6px;
+    background-color: #e5e7eb;  
+    margin-right: 10px;
+}
+
+.progress {
+    height: 100%;
+    background-color: #166534;  
+}
+
+.stars {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.star {
+    color: #fbbf24;  
+}
+
+.percentage {
+    color: #666;
+    font-size: 14px;
+}
+
+h5 {
+    margin-top: 50px;
+    font-family: "Proxima Nova";
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29.23px;
+    color: #344054;
+    margin-bottom: 24px;
+}
+
+
+ul.product-info-menu {
+    display: flex;
+    gap: 19px;
+    border-bottom: 4px solid #EAECF0;
+}
+
+
+a.escription {
+    border-bottom: 4px solid #EAECF0;
+}
+
+
+a.activee {
+    border-bottom: 4px solid #164C96;
+}

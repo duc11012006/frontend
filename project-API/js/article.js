@@ -14,7 +14,6 @@ const elmArticleSport = document.getElementsByClassName('articleSport');
 const elmSectionCategory = document.getElementById('articleSport');
 const elmTitleAritles = document.getElementById('titleAritles');
 const elmListGold = document.getElementById('List-Gold')
-const elmListtGold = document.getElementById('Listt-Gold')
 const elmSectionContainer = document.getElementById('sectionContainer');
 const elmListCoin = document.getElementById('list-coin');
 

@@ -8,6 +8,9 @@ const elmArticleSport = document.getElementsByClassName('articleSport');
 const elmSectionCategory = document.getElementById('sectionCategory');
 const elmWidgetNews = document.getElementById('widgetNews');
 const elmArticlesRecommended = document.getElementById('articlesRecommended');
+const elmListGold = document.getElementById('List-Gold');
+const elmListCoin = document.getElementById('list-coin');
+const elmWidgetItem = document.getElementById('widgetItem');
 
 const queryString = window.location.search;
 const urlParams = new URLSearchParams(queryString);
@@ -119,7 +122,7 @@ axios.get(`${BASE_URL}categories_news/articles?limit_cate=3&limit=4`).then((resp
               alt="About Me" class="w-100 author-thumb-sm d-block">
           </a>
           <div class="card-body px-0 pb-0">
-            <h2><a class="post-title" href="article.html?id=${item.id}">${itemAticle.title}</a></h2>
+            <h2><a class="post-title" href="article.html?id=${itemAticle.id}">${itemAticle.title}</a></h2>
           </div>
         </article>
       </div>`
@@ -165,9 +168,9 @@ axios.get(`${BASE_URL}categories_news?offset=0&limit=10`).then((response) => {
 });
 
 
-
 axios.get(`${BASE_URL}articles?offset=7&limit=1`).then((response) => {
-  const articles = response.data;
+  const articles = response.data.data;
+  console.log(response)
 
   let html = '';
   articles.forEach(item => {
@@ -213,4 +216,42 @@ axios.get(`${BASE_URL}articles?offset=9&limit=4`).then((response) => {
   });
   elmArticlesRecommended.innerHTML = html;
 });
+
+
+axios.get(`https://apiforlearning.zendvn.com/api/get-gold`).then((response) => {
+  const items = response.data;
+
+  let html = '';
+  items.forEach(item => {
+    html += /* html */ `                
+      <tr>
+						<td>${item.type}</td>
+						<td>${item.sell}</td>
+						<td>${item.buy}</td>
+      </tr>` 
+  });
+  elmListGold.innerHTML = html;
+});
+
+
+axios.get(`https://apiforlearning.zendvn.com/api/get-coin`).then((response) => {
+  const items = response.data;
+
+  let html = '';
+  items.forEach(item => {
+    let CoinActive = "";
+    if(item.percent_change_24h < 0) {
+      CoinActive = 'class ="active-coin"'
+    }
+    html += /* html */ `              
+      <tr>
+        <td class="much-coin">${item.name}</td>
+        <td class="much-coin">${item.price.toFixed(2)}</td>
+        <td ${CoinActive} class="much-coin">${item.percent_change_24h.toFixed(2)}</td>
+      </tr>
+	` 
+  });
+  elmListCoin.innerHTML = html;
+}); 
+
 

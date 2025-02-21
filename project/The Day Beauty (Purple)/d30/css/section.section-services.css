@@ -1,0 +1,100 @@
+.services-step {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 0; 
+}
+
+.services-step article {
+    flex: 1;
+    padding: 98px 45px;
+    position: relative;
+}
+
+.services-step article:nth-child(1) {
+    background: rgba(167, 139, 250, 1);
+    box-shadow: 8px 0px 60px 0px rgba(109, 40, 217, 0.15);
+}
+
+.services-step article:nth-child(2) {
+    background: rgba(167, 139, 251, 1);
+    box-shadow: 8px 0px 60px 0px rgba(109, 40, 217, 0.15);
+}
+
+.services-step article:nth-child(3) {
+    background: rgba(167, 139, 251, 1);
+}
+
+.services-step h2 {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 54px;
+    letter-spacing: 0.02em;
+    color: #fff;    
+}
+
+.services-step img[src*="Line"] {
+    width: 100%;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.3);
+    margin: 10px 0;
+}
+
+.services-step button {
+    padding: 2px 8px;
+    background: rgba(139, 92, 246, 1);
+    border-radius: 20px;
+    border: none;
+    color: rgba(255, 255, 255, 1);
+    font-size: 18px;
+    margin-right: 170px;
+}
+
+.services-step span {
+    color: rgba(255, 255, 255, 1);
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+.services-step img[src*="Image Container"] {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin: 15px 0;
+}
+
+.services-step a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    font-family: "Work Sans";
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 28px;
+    color: rgba(255, 255, 255, 1);
+}
+
+.services-step i {
+    width: 24px;
+    height: 24px;
+}
+
+button.more {
+    padding: 18px 53px;
+    margin-top: 24px;
+    background: linear-gradient(90deg, #B899FF -1.13%, #8B5CF6 101.43%);
+    border-style: solid;
+    border-color: rgba(236, 253, 245, 1);
+    font-family: "Work Sans";
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 25.2px;
+    color: rgba(255, 255, 255, 1);
+}
+
+div.button-step {
+    margin-bottom: 90px;
+    text-align: center;
+}

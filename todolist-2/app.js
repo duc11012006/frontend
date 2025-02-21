@@ -3,10 +3,11 @@ let inputUsername = document.getElementById("username");
 let elmRecordsTable = document.getElementById("records");
 let userList = JSON.parse(localStorage.getItem("user_list")) || [];
 
+
 renderUserList();
 
 function renderUserList() {
-    elmRecordsTable.innerHTML = ""; 
+    elmRecordsTable.innerHTML = "";
 
     userList.forEach((user, index) => {
         let row = document.createElement("tr");
@@ -22,29 +23,29 @@ function renderUserList() {
     });
 }
 
+
 btnTextwhitebtninfo.addEventListener("click", function () {
-    let username = inputUsername.value.trim();
+    let username = inputUsername.value;
 
     if (username != "" && username.length < 3) {
         alert("Vui lòng nhập tên người dùng.");
         return;
     }
 
-    userList.push(username); 
-    inputUsername.value = ""; 
+    userList.push(username);
+    inputUsername.value = "";
 
     localStorage.setItem("user_list", JSON.stringify(userList));
-    renderUserList(); 
+    renderUserList();
 });
 
 
 
 function deleteUser(index) {
-        userList.splice(index, 1); 
-        localStorage.setItem("user_list", JSON.stringify(userList));
-        renderUserList(); 
+    userList.splice(index, 1);
+    localStorage.setItem("user_list", JSON.stringify(userList));
+    renderUserList();
 }
-
 
 function editUser(index) {
     let name = prompt("Nhập tên mới:", userList[index]);
@@ -57,17 +58,9 @@ function editUser(index) {
         userList[index] = name.trim();
         localStorage.setItem("user_list", JSON.stringify(userList));
         renderUserList();
-    } 
+    }
 
     else {
         alert("Tên không hợp lệ!");
     }
 }
-
-
-
-
-
-
-
-
