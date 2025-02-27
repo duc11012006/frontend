@@ -1,0 +1,54 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+.article-item img {
+  width: 250px;
+  height: 150px;
+  object-fit: cover;  
+}
+
+.article-list .article-item {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.article-list .article-item img {
+  margin-right: 20px;
+}
+
+.article-grid .article-item {
+  margin-bottom: 20px;
+}
+
+.article-grid .article-item img {
+  width: 100%;
+  height: auto;
+}
+
+.article-footer {
+  font-size: 0.9em;
+  color: #555;
+  display: flex;
+  align-items: center;
+}
+/*reponsive cho phần tên tác giả và ngày tháng*/
+.article-list .article-item .article-footer p{
+  margin-right: 5%;
+}
+.article-grid .article-item .article-footer{
+  justify-content: space-between; /*khoảng cách ở giữa tên tác giả và thời gian khi bài viết về dạng grid*/
+}
+.article-grid .article-item .article-footer p{
+  margin-right: 10%;
+}
+
+.article-grid .article-item h4{
+  margin-top: 10px;
+}
+
+.article-footer i{
+  margin-right: 2px;
+}
