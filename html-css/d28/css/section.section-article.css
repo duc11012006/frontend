@@ -1,0 +1,139 @@
+section.section-article {
+    background: rgba(255, 255, 255, 1);
+    padding: 120px 50px 0px;
+}
+
+div.picture-left h5 {
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 65px;
+    letter-spacing: 0.02em;
+    color: rgba(37, 61, 50, 1);
+    display: inline-block;
+}
+
+div.picture-left {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 61px;
+}
+
+ul.title {
+    display: flex;
+    gap: 70px;
+    margin-top: 90px;
+}
+
+ul.title li a {
+    font-size: 24px;
+    line-height: 28.44px;
+    letter-spacing: 0.02em;
+    color: rgba(37, 61, 50, 1);
+    display: block;
+    text-decoration: none;
+}
+
+ul.title li.content a {
+    font-size: 24px;
+    line-height: 28.44px;
+    letter-spacing: 0.02em;
+    color: rgba(128, 131, 113, 0.9);
+    display: block;
+    text-decoration: none;
+}
+
+
+ul.title img {
+    width: 104px;
+    height: 3px;
+    margin-left: 38px;
+}
+
+div.content-title {
+    display: block;
+}
+
+div.right-span {
+    margin-top: 25px;
+}
+
+div.right-span span.date {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21.33px;
+    letter-spacing: 0.02em;
+    color: rgba(128, 131, 113, 1);
+}
+
+div.right-span p.paragraph {
+    font-size: 22px;
+    font-weight: 550;
+    line-height: 32px;
+    color: rgba(37, 61, 50, 1);
+    margin-top: 15px;
+    margin-bottom: 0px;
+}
+
+div.right-span p {
+    font-size: 16px;
+    line-height: 25px;
+    color: rgba(120, 132, 125, 1);
+    margin-bottom: 55px;
+    margin-top: 25px;
+}
+
+div.right-span button {
+    padding: 22px 50px;
+    background: rgba(255, 255, 255, 1);
+    border: 1px solid rgba(163, 185, 56, 1);
+    border-radius: 192px;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 23.7px;
+    letter-spacing: 0.02em;
+    color: rgba(152, 170, 40, 1);
+    margin-top: 25px;
+}
+
+article.seo  {
+    width: 45%;
+}
+
+article.seo img  {
+    width: 100%;
+    aspect-ratio: 540 / 343;
+    object-fit: cover;
+}
+
+article.digital  {
+    width: 20%;
+}
+
+article.digital img  {
+    width: 100%;
+    aspect-ratio: 270 / 245;
+    object-fit: cover;
+}
+
+article.phone  {
+    width: 20%;
+}
+
+article.phone img {
+    width: 100%;
+    aspect-ratio: 270 / 245;
+    object-fit: cover;
+}
+
+div.picture-title {
+    display: flex;
+    margin-top: 25px;
+    gap: 100px;
+}
+
+div.right-span img.eyes  {
+    width: 50%;
+    aspect-ratio: 68 / 68;
+    object-fit: cover;
+    margin-left: -15%;
+}

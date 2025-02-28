@@ -1,0 +1,94 @@
+section.footer-bottom {
+    padding: 83px 50px;
+    text-decoration: none;
+}
+
+div.footer-left p {
+    margin-top: 33px;
+    font-size: 20px;
+    line-height: 34px;
+    letter-spacing: 0.01em;
+    color: rgba(120, 132, 125, 1);
+    margin-bottom: 30px;
+}
+
+div.footer-left a.group {
+    cursor: pointer;
+}
+
+div.footer-left img.den {
+    margin-top: 10px;
+}
+
+div.footer-right {
+    display: flex;
+    gap: 50px;
+    text-decoration: none;
+    list-style: none;
+    justify-content: flex-end;
+    transform: translateY(-100%);
+    margin-top: 20px;
+    margin-bottom: -270px;
+}
+
+div.footer-right span {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 34px;
+    color: rgba(37, 61, 50, 1);
+    margin-bottom: 25px;
+}
+
+div.footer-right span.menu {
+    margin-bottom: 10px;
+}
+
+ul.menu-unstyle {
+    width: 175px;
+    height: 232px;
+    padding-top: 30px;
+}
+
+ul.menu-unstyle a {
+    list-style: none;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 34px;
+    color: rgba(120, 132, 125, 1);
+    text-decoration: none;
+}
+
+div.bottom-line span.line {
+    margin-top: 63px;
+    margin-bottom: 30px;
+    display: block;
+    height: 1px;
+    border: 1px solid rgba(20, 24, 62, 0.15)
+}
+
+div.vector {
+    display: flex;
+    justify-content: center;
+}
+
+div.vector img {
+    width: 16px;
+    height: 16px;
+}
+
+div.vector p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 34px;
+    color: rgba(120, 132, 125, 1);
+    margin-top: -8px;
+    margin-left: 5px;
+}
+
+div.list-unstyle a {
+    text-decoration: none;
+}
+
+div.footer-left a.group-30 {
+    cursor: pointer;
+}

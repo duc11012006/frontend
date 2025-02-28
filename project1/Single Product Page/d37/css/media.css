@@ -1,0 +1,194 @@
+@media only screen and (max-width: 450px) {
+    header {
+        padding: 10px 20px;
+        border-bottom: 1px solid #EDEDED;
+    }
+
+    .header-top {
+        flex-direction: column;
+        justify-content: center ;
+    }
+
+    .header-right {
+       flex-direction: column;
+    }
+
+    .shopping {
+        margin-top: 10px;
+        margin-left: 0;
+    }
+
+    .Fashion {
+        margin-right: 0px;
+    }
+
+    section.section-content {
+        display: block;
+        padding: 20px 20px;
+    }
+
+
+    div.list-image {
+        width: 100%;
+    }
+
+    div.image-top img {
+        object-fit: cover;
+        border-radius: 17px;
+        width: 100%;
+    }
+
+    div.image-bottom img {
+        object-fit: cover;
+        border-radius: 10px;
+        height: fit-content;
+        width: 100%;
+    }
+
+    div.list-img {
+        display: block;
+    }
+
+    div.image-bottom {
+        display: block;
+    }
+
+    div.list-img {
+        display: flex;
+        flex-direction: column;
+    }
+
+    div.Embrace-Sideboard {
+        width: 100%;
+    }
+
+    div.Sideboard-top {
+        gap: 14px;
+        margin-top: 10px;
+    }
+
+    div.Embrace {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    button {
+        margin-bottom: 0px;
+    }
+
+    div.radio {
+        padding: 0px;
+        background: #F3F3F3;
+        border-radius: 8px;
+        display: flex;
+        gap: 8px;
+        align-items: center;
+    }
+
+    button.number {
+        padding: 10px 40px;
+    }
+
+    button.icon {
+        padding: 13px 60px;
+    }
+
+    ul.product-info-menu {
+        margin-bottom: 20px;
+    }
+
+    section.product-info {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    div.product-info-description {
+        padding: 0;
+    }
+
+    li.input {
+        display: flex;
+        gap: 10px;
+    }
+
+    label {
+        margin-top: 5px;
+    }
+
+    section.product-design-bottom {
+        padding: 40px 20px;
+    }
+
+    h4 {
+        text-align: center;
+    }
+
+    .list-product {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .product {
+        width: 100% ;
+        background: #fff;
+        border: 1px solid #F7F5F7;
+    }
+
+    h6 {
+        text-align: left;
+    }
+
+    h2 {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px;
+        color: #667085;
+    }
+
+    section.product-design-reviews {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .rating-container {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .rating-score {
+        width: 100%;
+    }
+
+    .rating-bars {
+        width: 100%;
+    }
+
+    section.section-inset {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    div.review-text p {
+        width: 100%;
+    }
+
+    div.avatar {
+        width: 105.13px;
+        height: 36.13px;
+    }
+
+    .review-container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    a.view-all {
+        margin-bottom: 40px;
+    }
+
+}
+
+
+

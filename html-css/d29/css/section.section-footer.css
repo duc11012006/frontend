@@ -1,0 +1,117 @@
+section.section-footer {
+    padding: 200px 100px 67px 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+section.section-footer div.left{
+    flex: 3;
+    display: flex;
+}
+
+
+section.section-footer div.right {
+    flex: 1;
+}
+img.group {
+    width: 50%;
+    
+}
+
+div.ul-footer {
+    display: flex;
+    flex: 3;
+    gap: 56px;
+}
+
+div.footer-left {
+   flex: 1;
+   display: flex;
+   flex-direction: column;
+   gap: 70px;
+}
+
+div.bottom-img {
+    display: flex;
+    margin-bottom: 16px;
+    margin-top: 20px;
+}
+
+div.bottom-img:last-child {
+    margin-bottom: 0px;
+}
+
+div.bottom-img img {
+
+    margin-right: 14px;
+
+}
+
+ul.footer-bottom li.menu {
+    margin-top: 16px;
+}
+
+ul.footer-bottom  a {
+    text-decoration: none;
+    font-family: "Work Sans";
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25.2px;
+    color: rgba(6, 78, 59, 1);
+    margin-bottom: 10px;
+}
+
+ul.footer-bottom li.about a{
+    font-family: "Work Sans";
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 28px;
+    color: rgba(6, 78, 59, 1);
+    margin-top: 0px;
+}
+
+div.email {
+}
+
+div.email a {
+    text-decoration: none;
+    font-family: "Work Sans";
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 25.2px;
+    color: rgba(6, 78, 59, 1);
+}
+
+div.email img {
+    margin-top: 47px;
+}
+
+div.email input {
+    border-radius: 0px;
+    border: 0px;
+}
+
+div.email i {
+    color: rgba(6, 78, 59, 1);
+}
+
+div.email span.line {
+    display: block;
+    height: 1px;
+    border: 1.5px solid rgba(6, 78, 59, 1);
+    margin-top: 9px;
+}
+
+div.input {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 47px;
+}
+
+div.footer-left span {
+    font-family: "Work Sans";
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 25.2px;
+    color: rgba(6, 78, 59, 1);
+}

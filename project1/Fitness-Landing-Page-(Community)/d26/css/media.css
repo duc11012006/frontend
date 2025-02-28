@@ -1,0 +1,287 @@
+@media only screen and (max-width: 450px) {
+    
+    header, section {
+        padding: 0px 30px;
+    }
+
+    header nav {
+        margin-top: 20px;
+        margin-bottom: 100px;
+    }
+
+    @media only screen and (max-width: 450px) {
+        section.section-slider {
+            margin-top: -50px;
+        }
+    }
+    
+    header nav a.workout {
+        font-size: 15px;
+    }
+
+    header nav ul.menu {
+        margin-left: 15px;
+        margin-top: -2px;
+        gap: 26px;
+    }
+
+    section.section-slider {
+        padding: 0px 30px;
+        margin-bottom: -230px;
+    }
+
+    section.section-slider h1 {
+        font-size: 93px;
+        font-weight: 600;
+        line-height: 110px;
+        margin-top: -10px;
+    }
+
+    section.section-slider p {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 27px;
+        color: rgba(255, 255, 255, 0.5);
+        margin-bottom: 30px;
+    }
+
+    section.section-slider div.button {
+        display: flex;
+    }
+
+    section.section-slider div.button button.get-started {
+        padding: 13px 25px;
+    }
+
+    section.section-slider div.button button.Preview {
+        padding: 20px 40px;
+    }
+
+    section.section-popular div.title h2 {
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 45px;
+    }
+
+    section.section-popular div.title a.see {
+        font-size: 10px;
+    }
+
+    section.section-popular div.title {
+        margin-top: 250px;
+    }
+
+    section.section-popular article {
+        display: block;
+        flex-wrap: wrap;
+        gap: 80px 40px;
+    }
+
+    section.section-popular article div.list-picture {
+        width:  100%;
+    }
+
+    section.section-slider div.image {
+        display: flex;
+        /* position: absolute; */
+        justify-content: flex-start;
+        margin-top: 0;
+        margin-right: -50px;
+    }
+
+    section.section-slider div.image img {
+        width: 70%;
+    }
+
+    section.section-popular article div.list-picture div.content {
+        margin-bottom: 20px;
+    }
+
+    section.section-slider div.button-time {
+        position: none;
+        padding: 0 20px;
+        margin-top: 100px;
+        margin-left: 202px;
+    }
+
+    section.section-slider div.button-time button.time-top {
+        padding: 20px;
+    }
+
+    section.section-content svg {
+        width: 170%;
+    }
+
+    section.section-slider div.button-time button.time-bottom {
+        padding: 20px;
+    }
+
+    section.section-content div.content {
+        display: block;
+    }
+
+    section.section-content {
+        margin-top: 0px;
+    }
+
+    section.section-content div.color {
+        /* position: relative; */
+        z-index: 1;
+        margin-bottom: 80px;
+    }
+
+    div.left h2 {
+        font-size: 85px;
+        font-weight: 600;
+        line-height: 80px;
+    }
+
+    .header {
+        flex-direction: column;
+        padding: 0px 30px 153px 30px;
+    }
+
+    .background {
+        background: none;
+    }
+
+    section.section-content div.frame p {
+        font-size: 25px;
+        font-weight: 400;
+        line-height: 50px;
+        color: #FFFFFF;
+        display: block;
+        margin-left: 0px;
+    }
+
+    div.left svg {
+        width: 100%;
+    }
+
+    section.section-popular div.list-exericse {
+        margin-bottom: 100px;
+    }
+
+    .header p {
+        padding-top: 100px;
+    }
+
+    .trainers {
+        flex-direction: column;
+        padding: 0px 30px;
+    }
+
+    .trainer img {
+        max-height: none;
+    }
+
+    .trainer {
+        width: 100%;
+    }
+
+    .main-trainer {
+        transform: none;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+
+    div.big div.info {
+        margin-left: 0;
+    }
+
+    @media only screen and (max-width: 450px) {
+        section.section-content div.frame {
+            position: relative;
+            padding-left: 10px;
+            padding-top: 20px;
+            width: 100%;
+        }
+    }
+
+    div.list-coach {
+        margin-top: -127px;
+    }
+
+    section.section-list-exercise {
+        margin-top: 0px;
+    }
+
+    div.exercise div.exercise-block {
+        margin-left: -43px;
+    }
+
+    div.exercise h4 {
+        font-size: 25px;
+        line-height: 70px;
+        color: rgb(255, 255, 255);
+    }
+
+    div.exercise span.number {
+        font-size: 20px;
+    }
+
+    @media only screen and (max-width: 450px) {
+        section.section-content div.content {
+            display: block;
+            background-color: none;
+        }
+    }
+
+    section.section-content div.frame {
+        margin-left: -25px;
+        margin-top: 500px;
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+
+    div.coach {
+        width: 50%;
+        margin-top: 1110px;
+        margin-left: 86px;
+    }
+
+    img.trainer-top {
+        width: 100%;
+        /* position: relative; */
+    }
+
+    div.coach-center {
+        transform: translateY(565%);
+    }
+
+    div.coach-bottom {
+        position: absolute;
+        margin-top: -110px ;
+    }
+
+    img.trainer {
+        width: 100%;
+    }
+
+    @media only screen and (max-width: 450px) {
+        section.section-list-exercise {
+            margin-top:50px;
+        }
+    }
+
+    img.list-img {
+        position: absolute;
+        margin-left: 67px;
+    }
+
+    div.coach-infoo {
+        padding-top: 270px;
+        padding-left: 60px;
+    }
+
+    @media only screen and (max-width: 450px) {
+        section.section-content div.frame button.get-started {
+            margin-left: 80px;
+            margin-bottom: 200px;
+        }
+    }
+    @media only screen and (max-width: 450px) {
+        section.section-content div.content {
+            background: none;
+        }
+    }
+}

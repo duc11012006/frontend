@@ -1,0 +1,82 @@
+section.product-info{
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+
+ul.product-info-menu {
+    display: flex;
+    gap: 19px;
+}
+
+
+ul.product-info-menu a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.36px;
+    color: #164C96;
+}
+
+
+ul.product-info-menu a.active {
+    color: #98A2B3;
+    border-bottom: 4px solid #EAECF0;
+}
+
+
+div.product-info-description {
+    padding: 49px 190px 90px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+
+a.none {
+    border-bottom: 4px solid #164C96;
+}
+
+
+div.content-product h3 {
+    font-family: "Proxima Nova";
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29.23px;
+    color: #344054;
+    margin-bottom: 21px;
+}
+
+
+div.content-product p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 27.2px;
+    color: #667085;
+}
+
+
+div.list-input label {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 27.2px;
+    color: #667085;
+    margin-left: 5px;
+    margin-top: 6px;
+}
+
+
+div.list-input {
+    display: flex;
+}
+
+
+li.input {
+    display: flex;
+    gap: 10px;
+}
+
+
+label {
+    margin-top: 5px;
+}

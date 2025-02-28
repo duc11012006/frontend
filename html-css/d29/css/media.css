@@ -1,0 +1,289 @@
+@media only screen and (max-width: 450px) {
+       section.hero-green {
+        display: block;
+    }
+
+     div.header {
+        padding-left: 0px;
+        width: 100%;
+    } 
+
+    @media screen and (max-width: 450px) {
+  
+        .hero-green {
+            padding: 20px;
+            text-align: center;
+        }
+    
+        .header img {
+            width: 120px;
+            margin-bottom: 20px;
+        }
+    
+        .header h1 {
+            font-size: 24px;
+            line-height: 1.4;
+            margin-bottom: 20px;
+        }
+    
+        .button {
+            display: flex;
+            gap: 15px;
+            align-items: center;
+        }
+    
+        .button .become,
+        .button .see {
+            width: 100%;
+            max-width: 250px;
+            padding: 12px;
+        }
+    
+        .hero-img .people {
+            width: 100%;
+            margin: 30px 0;
+        }
+    
+        .time-bottom {
+            padding: 20px;
+            flex-direction: column;
+            gap: 20px;
+        }
+    
+        .time .grand {
+            font-size: 20px;
+        }
+    
+        .time .all-time {
+            font-size: 16px;
+        }
+    
+        .button-time {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+    
+        .hour {
+            padding: 8px;
+        }
+    
+        .hour .time {
+            font-size: 20px;
+        }
+    
+        .hour span:last-child {
+            font-size: 12px;
+        }
+    
+        .services-step {
+            flex-direction: column;
+            padding: 20px;
+            gap: 30px;
+        }
+    
+        .services-step article {
+            width: 100%;
+        }
+
+    
+        .services-step img {
+            width: 100%;
+            height: auto;
+        }
+    
+        .button .more {
+            width: 100%;
+            max-width: 250px;
+            margin: 20px auto;
+        }
+    
+        .section-suga {
+            flex-direction: column;
+            padding: 20px;
+        }
+    
+        .scrubs {
+            width: 100%;
+            text-align: center;
+            padding: 20px;
+        }
+    
+        .scrubs h3 {
+            font-size: 24px;
+        }
+    
+        .scrubs .sugar,
+        .scrubs .brown {
+            font-size: 16px;
+        }
+
+        .scrubs p {
+            font-size: 10px;
+        }
+    
+        .suga-green {
+            width: 100%;
+            height: 200px;
+        }
+    
+        .green {
+            width: 100%;
+            height: auto;
+            position: relative;
+            top: 0;
+            right: 0;
+        }
+    
+
+        .section-footer {
+            flex-direction: column;
+            padding: 20px;
+            gap: 30px;
+        }
+    
+        .footer-left {
+            text-align: center;
+        }
+    
+        .footer-left .group {
+            width: 120px;
+        }
+    
+        .ul-footer {
+            flex-direction: column;
+            gap: 30px;
+            text-align: center;
+        }
+    
+        .footer-bottom {
+            margin: 0;
+            padding: 0;
+        }
+    
+        .bottom-img {
+            justify-content: center;
+        }
+    
+        .email {
+            width: 100%;
+            text-align: center;
+        }
+    
+        .email .input {
+            width: 100%;
+            margin: 15px 0;
+        }
+    
+        .email input {
+            width: 100%;
+            padding: 12px;
+        }
+    
+        .email .fa-arrow-right {
+            right: 15px;
+        }
+    
+        .email .line {
+            width: 100%;
+        }
+
+        .services-step button {
+            margin-right: 110px;
+        }
+
+        div.button-time {
+            padding: 14px 58px;
+            background: linear-gradient(360deg, #059669 0.08%, #10B981 100%);
+            display: flex;
+            position: relative;
+        }
+
+        div.hero-img {
+            width: 100%;
+        }
+
+        div.time-bottom {
+            position: relative;
+            left: 0px;
+            bottom: 0px;
+        }
+
+        div.time {
+            display: block;
+        }
+
+        div.time span.grand {
+            font-size: 14px;
+            font-size: 600;
+        }
+
+        div.button-time {
+            justify-content: center;
+        }
+
+        section.section-suga {
+            padding: 0px 20px 0px 20px;
+             position: relative;
+        }
+
+        div.scrubs {
+            background: rgba(236, 253, 245, 1);
+            width: 100%;
+            height: none;
+            padding-left: 20px;
+            position: relative;
+            top: 0;
+            text-align: left;
+        }
+
+        .suga-green {
+            margin-top: 50px;
+            margin-left: 0px;
+        }
+
+        img.green {
+            width: 100%;
+            aspect-ratio: 1002 / 668;
+            object-fit: cover;
+            position: relative;
+            bottom: 0;
+            right: 0;
+        }
+
+        section.section-footer {
+            padding: 25px;
+            gap: 0px;
+            flex-direction: column;
+        }
+        section.section-footer div.left div.footer-left {
+        }
+        section.section-footer div.left div.ul-footer {
+            display: flex;
+            gap: 0px; 
+            margin-right: 0px;
+            text-align: left;
+        }
+
+        section.section-footer div.left div.ul-footer {
+            display: flex;
+            gap: 0px; 
+            margin-right: 0px;
+        }
+
+        section.section-footer div.left  {
+            flex: 1;
+            flex-direction: column;
+        }
+        section.section-footer div.right  {
+            flex: 1;
+            flex-direction: column;
+        }
+
+        div.footer-left {
+            flex-direction: row;
+        }
+    }   
+}
+
+

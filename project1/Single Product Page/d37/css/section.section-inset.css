@@ -1,0 +1,107 @@
+section.section-inset {
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+section.section-inset h5 {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 29.05px;
+    color: #1D2939;
+    margin-bottom: 24px;
+}
+
+
+div.review-item {
+    display: flex;
+    gap: 25px;
+}
+
+
+div.avatar {
+    width: 51.13px;
+    height: 51.13px;
+    background: #164C96;
+    border-radius: 50%;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 26px;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+span.reviewer-name {
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 26px;
+    color: #1D2939;
+    margin-right: 9px;
+}
+
+
+span.review-time {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 15.73px;
+    color: #4F547B;
+}
+
+
+div.review-text {
+    margin-top: 20px;
+    margin-bottom: 28px;
+}
+
+
+div.review-text strong {
+    font-size: 15px;
+    font-weight: 400;
+    color: #1D2939;
+}
+
+
+div.review-text p {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 26px;
+    color: #667085;
+    width: 740px;
+    height: 52px;
+}
+
+
+span.line {
+    background: #EDEDED;
+    margin-top: 44px;
+    margin-bottom: 44px;
+}
+
+
+div.review-actions a.action-button {
+    font-family: Inter;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 15.73px;
+    color: #667085;
+    text-decoration: none;
+    margin-right: 18px;
+}
+
+div.review-actions i {
+    margin-right: 5px;
+}
+
+
+a.view-all {
+    display: flex;
+    justify-content: center;
+    margin-top: 86px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.36px;
+    color: #D94A27;
+    margin-bottom: 72px;
+}

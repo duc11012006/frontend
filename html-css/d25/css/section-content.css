@@ -1,0 +1,168 @@
+section.section-content {
+    margin-top: 200px;
+    margin-bottom: 150px;
+    padding: 0px;
+}
+
+section.section-content div.content {
+    display: flex;
+    margin-bottom: 50px;
+    padding: 100px 0px 153px 0px;
+    background: linear-gradient(90deg, #000 25%, #ffffff1a 75%);
+    padding-left: 60px;
+}
+
+section.section-content div.color {
+    padding-right: 119px;
+    z-index: 1;
+    width: 50%;
+}
+
+
+
+section.section-content h2 {
+ 
+    font-size: 120px;
+    font-weight: 600;
+    line-height: 120px;
+    letter-spacing: -2px;
+    color: #FFFFFF;
+  
+}
+
+section.section-content svg {
+    margin-top: -130px;
+    position: absolute;
+    z-index: -1;
+}
+
+section.section-content div.frame {
+
+    width: 50%;
+}
+
+section.section-content div.frame p {
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 50px;
+    color: #FFFFFF;
+    display: block;
+}
+
+section.section-content div.frame button {
+    background: #25AB75;
+    border-radius: 10px;
+    margin-top: 50px;
+    padding: 24px 43px;
+}
+
+section.section-content div.frame button.get-started {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 22px;
+    color: #FFFFFF;
+    cursor: pointer;
+    border: none;
+}
+/* div.picture-content div.list-coach   {
+
+} */
+
+/* div.picture-content div.list-coach div.coach   {
+
+}    */
+
+ div.list-coach {
+    display: flex;
+    justify-content: space-between;
+}
+
+div.coach {
+    font-size: 0px;
+}
+
+
+img.list-img {
+    position: relative;
+    aspect-ratio: 558 / 514;
+    object-fit: cover;
+    border-radius: 0;
+    width: 100%;
+    padding-right: 60px;
+}
+
+img.trainer {
+    aspect-ratio: 321 / 321;
+    object-fit: cover;
+    border-radius: 0;
+    margin-top: -80px;
+}
+
+img.trainer-top {
+    aspect-ratio: 321 / 321;
+    object-fit: cover;
+    border-radius: 0;
+}
+
+/* div.coach div.coach-bottom {
+    margin-left: 220px;
+} */
+
+div.coach-info {
+    height: 60px;
+    font-size: 0;
+}
+div.coac-info:last-child {
+    padding-left: 20px;
+}
+
+div.coach-center {
+    width: 25%;
+    transform: translateY(100%);
+}
+
+div.coach{
+    width: 50%;
+    margin-top: 100px;
+}
+
+div.coach-center{
+    width: 50%;
+}
+
+
+div.coach-bottom {
+    width: 100%;
+    margin-top: 90px;
+}
+
+div.coach-bottom div.botton {
+    margin-left: 20px;
+}
+
+div.list-coach h3 {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 25px;   
+    color: rgba(255, 255, 255, 1);
+}
+
+div.list-coach span {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 14px;
+    color: rgba(255, 255, 255, 0.5);
+    margin-top: 5px;
+}
+
+div.coach-info {
+    margin-top: 20px;
+}
+
+div.coach-info h3 {
+    margin-bottom: 5px;
+}
+
+div.coach:last-child div.coach-info {
+    margin-left: 20px;
+}
