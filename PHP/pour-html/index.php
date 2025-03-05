@@ -2,125 +2,104 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Bootstrap JavaScript -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
-
+    <title>User Table</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<table class="table align-middle mb-0 bg-white">
-  <thead class="bg-light">
-    <tr>
-      <th>Name</th>
-      <th>Title</th>
-      <th>Status</th>
-      <th>Position</th>
-      <th>Actions</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>
-        <div class="d-flex align-items-center">
-          <img
-              src="https://mdbootstrap.com/img/new/avatars/8.jpg"
-              alt=""
-              style="width: 45px; height: 45px"
-              class="rounded-circle"
-              />
-          <div class="ms-3">
-            <p class="fw-bold mb-1">John Doe</p>
-            <p class="text-muted mb-0">john.doe@gmail.com</p>
-          </div>
+<form action="multy-delete.php" method="post" name="main-form" id="main-form">
+<?php
+	require_once 'functions.php';
+	
+	$data	= scandir('./files');
+	
+	$i = 0;
+	foreach ($data as $key => $value){
+		if($value == '.' || $value == '..' || preg_match('#.txt$#imsU',$value) == false) continue;
+		$class		= ($i % 2 == 0) ? 'odd' : 'even';
+		$content	= file_get_contents("./files/$value");
+		$content	= explode('||', $content);
+		$tile				= $content[0];
+		$author		        = $content[1];
+		$description		= $content[2];
+		$image		        = $content[3];
+		$id			= substr($value, 0, 5);
+		$size		= convertSize(filesize("./files/$value"));
+  }
+?>
+    <div class="table-container">
+        <div class="table-header">
+            <h2>User Management</h2>
+            <div class="table-actions">
+                <a href="add.php">Add File</a>
+                <a href="delete.php">Delete File</a>
+            </div>
         </div>
-      </td>
-      <td>
-        <p class="fw-normal mb-1">Software engineer</p>
-        <p class="text-muted mb-0">IT department</p>
-      </td>
-      <td>
-        <span class="badge badge-success rounded-pill d-inline">Active</span>
-      </td>
-      <td>Senior</td>
-      <td>
-        <button type="button" class="btn btn-link btn-sm btn-rounded">
-          Edit
-        </button>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <div class="d-flex align-items-center">
-          <img
-              src="https://mdbootstrap.com/img/new/avatars/6.jpg"
-              class="rounded-circle"
-              alt=""
-              style="width: 45px; height: 45px"
-              />
-          <div class="ms-3">
-            <p class="fw-bold mb-1">Alex Ray</p>
-            <p class="text-muted mb-0">alex.ray@gmail.com</p>
-          </div>
-        </div>
-      </td>
-      <td>
-        <p class="fw-normal mb-1">Consultant</p>
-        <p class="text-muted mb-0">Finance</p>
-      </td>
-      <td>
-        <span class="badge badge-primary rounded-pill d-inline"
-              >Onboarding</span
-          >
-      </td>
-      <td>Junior</td>
-      <td>
-        <button
-                type="button"
-                class="btn btn-link btn-rounded btn-sm fw-bold"
-                data-mdb-ripple-color="dark"
-                >
-          Edit
-        </button>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <div class="d-flex align-items-center">
-          <img
-              src="https://mdbootstrap.com/img/new/avatars/7.jpg"
-              class="rounded-circle"
-              alt=""
-              style="width: 45px; height: 45px"
-              />
-          <div class="ms-3">
-            <p class="fw-bold mb-1">Kate Hunington</p>
-            <p class="text-muted mb-0">kate.hunington@gmail.com</p>
-          </div>
-        </div>
-      </td>
-      <td>
-        <p class="fw-normal mb-1">Designer</p>
-        <p class="text-muted mb-0">UI/UX</p>
-      </td>
-      <td>
-        <span class="badge badge-warning rounded-pill d-inline">Awaiting</span>
-      </td>
-      <td>Senior</td>
-      <td>
-        <button
-                type="button"
-                class="btn btn-link btn-rounded btn-sm fw-bold"
-                data-mdb-ripple-color="dark"
-                >
-          Edit
-        </button>
-      </td>
-    </tr>
-  </tbody>
-</table>
+        <table>
+            <thead>
+                <tr>
+                    <th>Firstname</th>
+                    <th>Lastname</th>
+                    <th>Email</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="default">
+                    <td>Default</td>
+                    <td>Defaultson</td>
+                    <td>def@somemail.com</td>
+                    <td class="actions">
+                        <span class="edit-icon">✏️</span>
+                        <span class="delete-icon">🗑️</span>
+                    </td>
+                </tr>
+                <tr class="success">
+                    <td>Success</td>
+                    <td>Doe</td>
+                    <td>john@example.com</td>
+                    <td class="actions">
+                        <span class="edit-icon">✏️</span>
+                        <span class="delete-icon">🗑️</span>
+                    </td>
+                </tr>
+                <tr class="danger">
+                    <td>Danger</td>
+                    <td>Moe</td>
+                    <td>mary@example.com</td>
+                    <td class="actions">
+                        <span class="edit-icon">✏️</span>
+                        <span class="delete-icon">🗑️</span>
+                    </td>
+                </tr>
+                <tr class="info">
+                    <td>Info</td>
+                    <td>Dooley</td>
+                    <td>july@example.com</td>
+                    <td class="actions">
+                        <span class="edit-icon">✏️</span>
+                        <span class="delete-icon">🗑️</span>
+                    </td>
+                </tr>
+                <tr class="warning">
+                    <td>Warning</td>
+                    <td>Refs</td>
+                    <td>bo@example.com</td>
+                    <td class="actions">
+                        <span class="edit-icon">✏️</span>
+                        <span class="delete-icon">🗑️</span>
+                    </td>
+                </tr>
+                <tr class="active">
+                    <td>Active</td>
+                    <td>Activeson</td>
+                    <td>ac1@example.com</td>
+                    <td class="actions">
+                        <span class="edit-icon">✏️</span>
+                        <span class="delete-icon">🗑️</span>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 </body>
 </html>

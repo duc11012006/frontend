@@ -1,0 +1,69 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+.table-container {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+.table-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: #f8f9fa;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+.table-actions {
+    display: flex;
+    gap: 10px;
+}
+.table-actions a {
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 4px;
+    font-size: 0.9em;
+    transition: background-color 0.3s ease;
+}
+.add-file {
+    background-color: #28a745;
+    color: white;
+}
+.delete-file {
+    background-color: #dc3545;
+    color: white;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+table thead {
+    background-color: #f2f2f2;
+}
+.actions {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+.edit-icon, .delete-icon {
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+.edit-icon:hover, .delete-icon:hover {
+    transform: scale(1.2);
+}
+tr.default { background-color: white; }
+tr.success { background-color: #dff0d8; }
+tr.danger { background-color: #f2dede; }
+tr.info { background-color: #d9edf7; }
+tr.warning { background-color: #fcf8e3; }
+tr.active { background-color: #f0f0f0; }
