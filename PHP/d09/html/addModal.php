@@ -13,17 +13,21 @@ $email = "";
 $content = "";
 $flag = false;
 
-if(isset($_POST["btn-submit"])){
-	$name = $_POST['name'] ?? '';
-	$phone = $_POST['phone'] ?? '';
-	$email = $_POST['email'] ?? '';
-	$image = $_FILES['file-upload'] ?? null;
-	$content = $_POST['content'] ?? '';
+if(isset($_POST['title']) && isset($_POST['author']) && isset($_POST['description']) && isset($_FILES['file-upload']) && isset($_POST['Content'])){
+	$name = $_POST['name'] ;
+	$phone = $_POST['phone'];
+	$email = $_POST['email'] ;
+	$content = $_POST['content'] ;
+	$image = $_FILES['file-upload'];
 	
 	if(checkEmpty($name)) {
 		$errorName = '<p class="error">Dữ liệu không được rỗng</p>';
 	} elseif(checkLength($name, 5, 100)) {
 		$errorName .= '<p class="error">Tiêu đề dài từ 5 đến 100 ký tự</p>';
+	}
+
+	if(checkEmpty($phone)) {
+		$errorPhone = '<p class="error">Dữ liệu không được rỗng</p>';
 	}
 
 	if(checkEmpty($email)) {
@@ -42,28 +46,29 @@ if(isset($_POST["btn-submit"])){
 		$errorImage = '<p class="error">Vui lòng chọn tập tin</p>';
 	}
 	
-	if(empty($errorName) && empty($errorPhone) && empty($errorEmail) && empty($errorImage) && empty($errorContent)){
-		$uniqueID = randomString(6);
-		$filename = $uniqueID . '.' . pathinfo($image['name'], PATHINFO_EXTENSION);
-		move_uploaded_file($image['tmp_name'], './files/' . $filename);
-
-		$filePath = './files/' . $uniqueID . '.txt';
-		$data = $name . '||' . $phone . '||' . $email . '||' . $filename . '||' . $content;
+	if($errorName == '' && $errorPhone == '' && $errorEmail == '' && $errorImage == '' && $errorContent == ''){
+		$filename		= randomString(6) . '.'. pathinfo($image['name'], PATHINFO_EXTENSION);
+		move_uploaded_file($image['tmp_name'], './files/' .$filename);
+	
+		$data	= $name . '||' . $phone . '||' . $email . '||' . $filename . '||' . $email;
 		
-		if(file_put_contents($filePath, $data)){
-			$name = '';
-			$phone = '';
-			$email = '';
-			$content = '';
-			$flag = true;
+		$name = randomString(5);
+		$filename	= './files/' . $name . '.txt';
+		if(file_put_contents($filename, $data)){
+			$name			= '';
+			$phone	        = '';
+			$email          = '';
+			$image          = '';
+			$content        = '';
+			$flag			= true;
 		}
 	}
 } 
 
-$inputName = createInput('Họ & Tên', 'name', $errorName);
-$inputPhone = createInput('Số Điện Thoại', 'phone', $errorPhone);
-$inputEmail = createInput('Email', 'email', $errorEmail);
-$inputContent = createText('Content', 'content', $errorContent);
+$inputName = createInput('Họ & Tên', 'name', $name, $errorName);
+$inputPhone = createInput('Số Điện Thoại', 'phone', $phone, $errorPhone);
+$inputEmail = createInput('Email', 'email', $email, $errorEmail);
+$inputContent = createText('Content', 'content', $content, $errorContent);
 $inputImage = createFile('Image', $errorImage);
 ?>
 <div id="addEmployeeModal" class="modal fade in" >
@@ -75,7 +80,11 @@ $inputImage = createFile('Image', $errorImage);
 					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
 				</div>
 				<div class="modal-body">					
-					<?php echo $inputName . $inputPhone . $inputEmail . $inputContent . $inputImage; ?>			
+					<?php echo $inputName; ?>
+					<?php echo $inputPhone; ?>
+					<?php echo $inputEmail; ?>
+					<?php echo $inputContent; ?>
+					<?php echo $inputImage; ?>			
 				</div>
 				<div class="modal-footer">
 					<input type="button" class="btn btn-default" data-dismiss="modal" value="Cancel">
