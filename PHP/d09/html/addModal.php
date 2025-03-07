@@ -13,7 +13,7 @@ $email = "";
 $content = "";
 $flag = false;
 
-if(isset($_POST['title']) && isset($_POST['author']) && isset($_POST['description']) && isset($_FILES['file-upload']) && isset($_POST['Content'])){
+if(isset($_POST['name']) && isset($_POST['phone']) && isset($_POST['email']) && isset($_FILES['file-upload']) && isset($_POST['content'])){
 	$name = $_POST['name'] ;
 	$phone = $_POST['phone'];
 	$email = $_POST['email'] ;
