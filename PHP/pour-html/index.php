@@ -1,105 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>User Table</title>
-    <link rel="stylesheet" href="css/style.css">
+<?php 
+        include_once "html/head.php";
+    ?>
 </head>
-<body>
-<form action="multy-delete.php" method="post" name="main-form" id="main-form">
-<?php
-	require_once 'functions.php';
-	
-	$data	= scandir('./files');
-	
-	$i = 0;
-	foreach ($data as $key => $value){
-		if($value == '.' || $value == '..' || preg_match('#.txt$#imsU',$value) == false) continue;
-		$class		= ($i % 2 == 0) ? 'odd' : 'even';
-		$content	= file_get_contents("./files/$value");
-		$content	= explode('||', $content);
-		$tile				= $content[0];
-		$author		        = $content[1];
-		$description		= $content[2];
-		$image		        = $content[3];
-		$id			= substr($value, 0, 5);
-		$size		= convertSize(filesize("./files/$value"));
-  }
-?>
-    <div class="table-container">
-        <div class="table-header">
-            <h2>User Management</h2>
-            <div class="table-actions">
-                <a href="add.php">Add File</a>
-                <a href="delete.php">Delete File</a>
+  <body>
+    <div class="container">
+        <div class="table-wrapper">
+            <div class="table-title">
+                <div class="row">
+                    <div class="col-sm-6">
+						<h2>Manage <b>Employees</b></h2>
+					</div>
+					<div class="col-sm-6">
+						<a href="#addEmployeeModal" class="btn btn-success" data-toggle="modal"><i class="material-icons">&#xE147;</i> <span>Add New Employee</span></a>
+						<a href="#deleteEmployeeModal" class="btn btn-danger" data-toggle="modal"><i class="material-icons">&#xE15C;</i> <span>Delete</span></a>						
+					</div>
+                </div>
             </div>
+            <table class="table table-striped table-hover">
+                <thead>
+                    <tr>
+						<th>
+							<span class="custom-checkbox">
+								<input type="checkbox" id="selectAll">
+								<label for="selectAll"></label>
+							</span>
+						</th>
+                        <th>Image</th>
+                        <th>Name</th>
+                        <th>Email</th>
+						<th>Address</th>
+                        <th>Phone</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+						<td>
+							<span class="custom-checkbox">
+								<input type="checkbox" id="checkbox1" name="options[]" value="1">
+								<label for="checkbox1"></label>
+							</span>
+						</td>
+                        <td><img class="active" src="img/picture1.jpg"></td>
+                        <td>Thomas Hardy</td>
+                        <td>thomashardy@mail.com</td>
+						<td>89 Chiaroscuro Rd, Portland, USA</td>
+                        <td>(171) 555-2222</td>
+                        <td>
+                            <a href="#editEmployeeModal" class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a>
+                            <a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a>
+                        </td>
+                    </tr>
+                    <tr>
+						<td>
+							<span class="custom-checkbox">
+								<input type="checkbox" id="checkbox2" name="options[]" value="1">
+								<label for="checkbox2"></label>
+							</span>
+						</td>
+                        <td><img class="active" src="img/picture2.jpg"></td>
+                        <td>Dominique Perrier</td>
+                        <td>dominiqueperrier@mail.com</td>
+						<td>Obere Str. 57, Berlin, Germany</td>
+                        <td>(313) 555-5735</td>
+                        <td>
+                            <a href="#editEmployeeModal" class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a>
+                            <a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a>
+                        </td>
+                    </tr>
+					<tr>
+						<td>
+							<span class="custom-checkbox">
+								<input type="checkbox" id="checkbox3" name="options[]" value="1">
+								<label for="checkbox3"></label>
+							</span>
+						</td>
+                        <td><img class="active" src="img/picture3.jpg"></td>
+                        <td>Maria Anders</td>
+                        <td>mariaanders@mail.com</td>
+						<td>25, rue Lauriston, Paris, France</td>
+                        <td>(503) 555-9931</td>
+                        <td>
+                            <a href="#editEmployeeModal" class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a>
+                            <a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a>
+                        </td>
+                    </tr>
+                    <tr>
+						<td>
+							<span class="custom-checkbox">
+								<input type="checkbox" id="checkbox4" name="options[]" value="1">
+								<label for="checkbox4"></label>
+							</span>
+						</td>
+                        <td><img class="active" src="img/picture4.jpg"></td>
+                        <td>Fran Wilson</td>
+                        <td>franwilson@mail.com</td>
+						<td>C/ Araquil, 67, Madrid, Spain</td>
+                        <td>(204) 619-5731</td>
+                        <td>
+                            <a href="#editEmployeeModal" class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a>
+                            <a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a>
+                        </td>
+                    </tr>					
+					<tr>
+						<td>
+							<span class="custom-checkbox">
+								<input type="checkbox" id="checkbox5" name="options[]" value="1">
+								<label for="checkbox5"></label>
+							</span>
+						</td>
+                        <td><img class="active" src="img/picture5.jpg"></td>
+                        <td>Martin Blank</td>
+                        <td>martinblank@mail.com</td>
+						<td>Via Monte Bianco 34, Turin, Italy</td>
+                        <td>(480) 631-2097</td>
+                        <td>
+                            <a href="#editEmployeeModal" class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a>
+                            <a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a>
+                        </td>
+                    </tr> 
+                </tbody>
+            </table>
         </div>
-        <table>
-            <thead>
-                <tr>
-                    <th>Firstname</th>
-                    <th>Lastname</th>
-                    <th>Email</th>
-                    <th>Actions</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr class="default">
-                    <td>Default</td>
-                    <td>Defaultson</td>
-                    <td>def@somemail.com</td>
-                    <td class="actions">
-                        <span class="edit-icon">✏️</span>
-                        <span class="delete-icon">🗑️</span>
-                    </td>
-                </tr>
-                <tr class="success">
-                    <td>Success</td>
-                    <td>Doe</td>
-                    <td>john@example.com</td>
-                    <td class="actions">
-                        <span class="edit-icon">✏️</span>
-                        <span class="delete-icon">🗑️</span>
-                    </td>
-                </tr>
-                <tr class="danger">
-                    <td>Danger</td>
-                    <td>Moe</td>
-                    <td>mary@example.com</td>
-                    <td class="actions">
-                        <span class="edit-icon">✏️</span>
-                        <span class="delete-icon">🗑️</span>
-                    </td>
-                </tr>
-                <tr class="info">
-                    <td>Info</td>
-                    <td>Dooley</td>
-                    <td>july@example.com</td>
-                    <td class="actions">
-                        <span class="edit-icon">✏️</span>
-                        <span class="delete-icon">🗑️</span>
-                    </td>
-                </tr>
-                <tr class="warning">
-                    <td>Warning</td>
-                    <td>Refs</td>
-                    <td>bo@example.com</td>
-                    <td class="actions">
-                        <span class="edit-icon">✏️</span>
-                        <span class="delete-icon">🗑️</span>
-                    </td>
-                </tr>
-                <tr class="active">
-                    <td>Active</td>
-                    <td>Activeson</td>
-                    <td>ac1@example.com</td>
-                    <td class="actions">
-                        <span class="edit-icon">✏️</span>
-                        <span class="delete-icon">🗑️</span>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
     </div>
+	<!-- Add Modal HTML -->
+    <?php 
+        include_once "html/addModal.php";
+    ?>
+
+    <!-- Edit Modal HTML -->
+    <?php 
+        include_once "html/editModal.php";
+    ?>
+
+	<!-- Delete Modal HTML -->
+    <?php 
+        include_once "html/deleteModal.php";
+    ?>
+
 </body>
 </html>
