@@ -1,0 +1,18 @@
+[
+    {
+        "user_info": {
+            "name": "Văn linh",
+            "pass": "e10adc3949ba59abbe56e057f20f883e",
+            "username": "admin@123",
+            "role": "admin"
+        }
+    },
+    {
+        "user_info": {
+            "name": "Quang Đức",
+            "pass": "e10adc3949ba59abbe56e057f20f883e",
+            "username": "voquangduc",
+            "role": "member"
+        }
+    }
+]
