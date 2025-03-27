@@ -1,0 +1,32 @@
+[
+    {
+        "user_info": {
+            "name": "Admin ZendVN",
+            "pass": "e10adc3949ba59abbe56e057f20f883e",
+            "username": "admin",
+            "role": "admin"
+        },
+        "website": "zendvn.com",
+        "address": "Chung cư Tam Phú"
+    },
+    {
+        "user_info": {
+            "name": "Van Linh",
+            "pass": "e10adc3949ba59abbe56e057f20f883e",
+            "username": "linh",
+            "role": "admin"
+        },
+        "website": "12zendvn.com",
+        "address": "21Chung cư Tam Phú"
+    },
+    {
+        "user_info": {
+            "name": "Duc",
+            "pass": "e10adc3949ba59abbe56e057f20f883e",
+            "username": "member",
+            "role": "member"
+        },
+        "website": "12zendvn.com",
+        "address": "21Chung cư Tam Phú"
+    }
+]
